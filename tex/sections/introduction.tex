@@ -1,42 +1,50 @@
 \section{Introduction}
 \label{sec:Introduction}
 
+\begin{comment}
 Each section should start with an introduction before its subsections begin.
-Sections with just one sub-section should be avoided. 
-Think carefully about section titles as each title should convey the meaning of the contents of the section. 
+Sections with just one sub-section should be avoided.
+Think carefully about section titles as each title should convey the meaning of the contents of the section.
 
-In all sections it is important to write clearly and concisely. 
-Avoid repetitions and if needed refer back to the original discussion or presentation. 
-Each new section, subsection or paragraph should provide the reader with new information and be written in your own words. 
-Avoid direct quotes. If you use direct quotes, unless the quote itself is very significant, 
-you are conveying to the reader that you are unable to express this discussion or fact yourself. 
-Such direct quotes also break the flow of the language (yours to someone else's).   
+In all sections it is important to write clearly and concisely.
+Avoid repetitions and if needed refer back to the original discussion or presentation.
+Each new section, subsection or paragraph should provide the reader with new information and be written in your own words.
+Avoid direct quotes. If you use direct quotes, unless the quote itself is very significant,
+you are conveying to the reader that you are unable to express this discussion or fact yourself.
+Such direct quotes also break the flow of the language (yours to someone else's).
 
-Manuscripts must be in single-column format. {\bf Type single-spaced.}  
-You may prepare your PDF files using any word processor, 
+Manuscripts must be in single-column format. {\bf Type single-spaced.}
+You may prepare your PDF files using any word processor,
 but templates are only provided for \LaTeX\ and Microsoft Word.
-For the production of the electronic manuscript you must use Adobe's Portable Document Format (PDF). 
-PDF files are usually produced from \LaTeX\ using the \textit{pdflatex} command. 
-If your version of \LaTeX\ produces Postscript files, you can convert these into PDF using \textit{ps2pdf} or \textit{dvipdf}. 
+For the production of the electronic manuscript you must use Adobe's Portable Document Format (PDF).
+PDF files are usually produced from \LaTeX\ using the \textit{pdflatex} command.
+If your version of \LaTeX\ produces Postscript files, you can convert these into PDF using \textit{ps2pdf} or \textit{dvipdf}.
 On Windows, you can also use Adobe Distiller to generate PDF, or the print to  or save to PDF functions.
 
-For reasons of uniformity, Adobe's {\bf Times Roman} font should be used, 
+For reasons of uniformity, Adobe's {\bf Times Roman} font should be used,
 with 11pt for the text, 12pt for section titles, and 15pt for the title of the report.
-If Times Roman is unavailable, use {\bf Computer Modern Roman} (\LaTeX2e{}'s default).  
+If Times Roman is unavailable, use {\bf Computer Modern Roman} (\LaTeX2e{}'s default).
 Note that the latter is about 10\% less dense than Adobe's Times Roman font.
-Please make sure that your PDF file includes all the necessary fonts (especially tree diagrams, symbols, and fonts for non-Latin characters). 
-When you print or create the PDF file, there is usually an option in your printer setup to include none, all or just non-standard fonts.  
+Please make sure that your PDF file includes all the necessary fonts (especially tree diagrams, symbols, and fonts for non-Latin characters).
+When you print or create the PDF file, there is usually an option in your printer setup to include none, all or just non-standard fonts.
 Please make sure that you select the option of including ALL the fonts.
 
-The section `Introduction' should give the background and motivation for the work, that is, 
-it should state where your project is situated in the field and what the key driving forces motivating this research are. 
-However, keep that text brief, as it will be further extended in Section~\ref{sec:related_work}, presenting the state-of-the-art. 
-Your goal/objective should be possible to describe in a single sentence. 
-In the text after it you can expand on this sentence to clarify what is meant by the short goal description. 
-The goal of your work is what you are trying to achieve. 
+The section `Introduction' should give the background and motivation for the work, that is,
+it should state where your project is situated in the field and what the key driving forces motivating this research are.
+However, keep that text brief, as it will be further extended in Section~\ref{sec:related_work}, presenting the state-of-the-art.
+Your goal/objective should be possible to describe in a single sentence.
+In the text after it you can expand on this sentence to clarify what is meant by the short goal description.
+The goal of your work is what you are trying to achieve.
 Potentially, how well the goal has been met is a theme that you should return to towards the end of the report (so in Section~\ref{sec:Conclusion} and possibly in Section~\ref{sec:Discussion} as well).
 
-The introduction can also briefly describe what methodology you will apply to reach the goal and the reasons for this choice of research methodology.  
+The introduction can also briefly describe what methodology you will apply to reach the goal and the reasons for this choice of research methodology.
 It can furthermore provide a brief summary of the main contributions of the work,
-and should provide the reader with an overview of what is coming in the next sections. 
-You want to say more than what is explicit in the section names, if possible, but still keep the description short and to the point. 
+and should provide the reader with an overview of what is coming in the next sections.
+You want to say more than what is explicit in the section names, if possible, but still keep the description short and to the point.
+\end{comment}
+
+This project is based on the shared task on \gls{acr:smg} from VarDial 2020 and 2021 (seventh and eighth edition, respectively), the Workshop on \gls{acr:nlp} for Similar Languages, Varieties and Dialects \citep{gamanReportVarDialEvaluation2020, chakravarthiFindingsVarDialEvaluation2021}. The aim of the task differs somewhat from the most common types of \gls{acr:nlp} VarDial tasks, where the goal typically is to choose from a finite set of variety labels \citep[1]{scherrerSocialMediaVariety2021}. Here, the goal is to predict a set of scalars, namely the latitude and longitude from which a social media post was posted. This VarDial task stayed the same from 2020 to 2021, including three language areas: the Bosnian-Croatian-Montenegrin-Serbian language area, the German language area (Germany and Austria in this case), and the German-speaking Switzerland.
+
+This project is limited to the latter of these language areas, that is, the German-speaking Switzerland. Reasons for this include the limited time scope of the task, and having to share the necessary computing resources with fellow students at the department. The goal is to try and recreate the results of \cite{scherrerHeLjuVarDial20202020} who used a \acrshort{acr:bert}-based classifier, making it a double regression task. I focus on the \citeyear{scherrerHeLjuVarDial20202020} dataset because there were a lot more submissions this year as opposed to in \citeyear{scherrerSocialMediaVariety2021}, due to the short time between the announcement of the shared task and the submission deadline \citep[6]{chakravarthiFindingsVarDialEvaluation2021}.
+
+The reason for picking the task on the German-speaking Switzerland is its similarities to the dialectal landscape of Norway.
