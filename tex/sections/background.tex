@@ -112,5 +112,32 @@ You do not need to describe every entry, but draw the reader's attention to what
 e.g., that $94.99$ is an amazing F$_1$-score for the English-Gujarati language pair (and that probably something fishy happened there).
 \todo[inline]{There is always some more stuff that you will need to add at some later point.
     Be sure to at least make a note about it somewhere.}
-
 \end{comment}
+
+This section will elaborate on technologies central to this project. It is assumed that the reader has basic understanding of what \glspl{acr:lm} are, and also that they are somewhat wandered in the world of \acrfull{acr:nlp}.
+
+\subsection{The Transformer Architecture}
+
+\cite{vaswaniAttentionAllYou2017a} managed to achieve new state-of-the-art results for machine translation tasks with their introduction of the Transformer architecture. The Transformer has later been proved effective for numerous downstream tasks, and for a variety of modalities. Titleing their paper \citetitle{vaswaniAttentionAllYou2017a}, \citeauthor{vaswaniAttentionAllYou2017a} suggest that their attention-based architecture renders recurrent neural networks and convolutional neural networks redundant in most cases, due to its superior parallellization abilities and the shorter path between combinations of position input and output sequences, making it easier to learn long-range dependencies \citep[6]{vaswaniAttentionAllYou2017a}.
+
+The Transformer employs self-attention, which gives the model access to the salitent input words at each time step. An attention function maps a query and a set of key-value pairs to an output, calculating the compatibility between a query corresponding key.
+
+\subsection[BERT]{\acrshort{acr:bert}}
+
+\gls{acr:bert} is a family of language models which was first introduced in 2018 \citep{devlinBERTPretrainingDeep2019}.
+\acrshort{acr:bert} is designed to facilitate a wide range of downstream tasks. The self-attention mechanism allows for efficient bidirectional cross attention between two sentences in one step, a process which previously was done by encoding text pairs before applying bidirection cross attention \citep[5]{devlinBERTPretrainingDeep2019}. See \autoref{fig:bert-high-level-overview}.
+
+\begin{figure}
+    \centering
+    \includegraphics*[width=\textwidth]{./figs/BERT_overall_procedures.jpg}
+    \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}.}
+    \label{fig:bert-high-level-overview}
+\end{figure}
+
+\subsection{Geodesic Terminology and Metrics}
+
+Haversine formula, etc.
+
+\subsection{(Double) Regression}
+
+\acrshort{acr:bert} can be used for regression tasks.

@@ -134,6 +134,72 @@
       \verb C:\Users\oskar\Zotero\storage\GLQTG498\Chakravarthi et al. - 2021 - Findings of the VarDial Evaluation Campaign 2021.pdf
       \endverb
     \endentry
+    \entry{devlinBERTPretrainingDeep2019}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dde73b4194f5bc4230c4808f3fc1534}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kenton},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92aa283415413bb8d2a1548716d0c7d}{%
+           family={Toutanova},
+           familyi={T\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{bibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{number}{arXiv:1810.04805}
+      \field{shorttitle}{{{BERT}}}
+      \field{title}{{{BERT}}: {{Pre-training}} of {{Deep Bidirectional Transformers}} for {{Language Understanding}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1810.04805
+      \endverb
+      \verb{eprint}
+      \verb 1810.04805
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\oskar\\Zotero\\storage\\G4I8TCLX\\Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transform.pdf;C\:\\Users\\oskar\\Zotero\\storage\\AFC5RD5Z\\1810.html
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
     \entry{gamanReportVarDialEvaluation2020}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=3b91b15541af28ddf7e126649bd848a0}{%
@@ -237,6 +303,54 @@
       \verb C:\Users\oskar\Zotero\storage\8UCGMNYC\Gaman et al. - 2020 - A Report on the VarDial Evaluation Campaign 2020.pdf
       \endverb
     \endentry
+    \entry{roynelandDialectsNorwayCatching2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b75abdfe7386373c265bc9540416dac}{%
+           family={R{ø}yneland},
+           familyi={R\bibinitperiod},
+           given={Unn},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{fullhash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{bibnamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authorbibnamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authornamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authorfullhash}{2b75abdfe7386373c265bc9540416dac}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Norway has sometimes been described as a sociolinguistic paradise with its abundant linguistic heterogeneity —{} both written and spoken. Dialect diversity has been and is still considerable and dialects are used in practically all social domains. However, dialects in Norway are changing. In this article I will discuss the historical background for the linguistic situation in Norway, and I will take a closer look at present-day developments and discuss the structural, sociocultural, and psychological mechanisms behind them. The question is whether the dialect situation in Norway remains very different from most other parts of Europe, or if at least some areas of Norway may be experiencing similar developments.}
+      \field{chapter}{International Journal of the Sociology of Language}
+      \field{issn}{1613-3668}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{196-197}
+      \field{shorttitle}{Dialects in {{Norway}}}
+      \field{title}{Dialects in {{Norway}}: Catching up with the Rest of {{Europe}}?}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{2009}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{7\bibrangedash 30}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1515/IJSL.2009.015
+      \endverb
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\2UZVYRLX\Røyneland - 2009 - Dialects in Norway catching up with the rest of E.pdf
+      \endverb
+    \endentry
     \entry{scherrerHeLjuVarDial20202020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c53e65b760b3618d1b9e40bbad6a801b}{%
@@ -336,6 +450,86 @@
       \range{pages}{6}
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\5RVDU6NE\Scherrer and Ljubešić - 2021 - Social Media Variety Geolocation with geoBERT.pdf
+      \endverb
+    \endentry
+    \entry{vaswaniAttentionAllYou2017a}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorbibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms. We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+      \field{journaltitle}{Advances in {{Neural Information Processing Systems}}}
+      \field{title}{Attention Is {{All}} You {{Need}}}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\7YZDRE5Z\Vaswani et al. - 2017 - Attention is All you Need.pdf
       \endverb
     \endentry
   \enddatalist
@@ -455,6 +649,72 @@
       \verb C:\Users\oskar\Zotero\storage\GLQTG498\Chakravarthi et al. - 2021 - Findings of the VarDial Evaluation Campaign 2021.pdf
       \endverb
     \endentry
+    \entry{devlinBERTPretrainingDeep2019}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dde73b4194f5bc4230c4808f3fc1534}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kenton},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92aa283415413bb8d2a1548716d0c7d}{%
+           family={Toutanova},
+           familyi={T\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{bibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5\% (7.7\% point absolute improvement), MultiNLI accuracy to 86.7\% (4.6\% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arxiv}
+      \field{month}{5}
+      \field{number}{arXiv:1810.04805}
+      \field{shorttitle}{{{BERT}}}
+      \field{title}{{{BERT}}: {{Pre-training}} of {{Deep Bidirectional Transformers}} for {{Language Understanding}}}
+      \field{urlday}{9}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1810.04805
+      \endverb
+      \verb{eprint}
+      \verb 1810.04805
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\oskar\\Zotero\\storage\\G4I8TCLX\\Devlin et al. - 2019 - BERT Pre-training of Deep Bidirectional Transform.pdf;C\:\\Users\\oskar\\Zotero\\storage\\AFC5RD5Z\\1810.html
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
     \entry{gamanReportVarDialEvaluation2020}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=3b91b15541af28ddf7e126649bd848a0}{%
@@ -558,6 +818,54 @@
       \verb C:\Users\oskar\Zotero\storage\8UCGMNYC\Gaman et al. - 2020 - A Report on the VarDial Evaluation Campaign 2020.pdf
       \endverb
     \endentry
+    \entry{roynelandDialectsNorwayCatching2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2b75abdfe7386373c265bc9540416dac}{%
+           family={R{ø}yneland},
+           familyi={R\bibinitperiod},
+           given={Unn},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {De Gruyter Mouton}%
+      }
+      \strng{namehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{fullhash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{bibnamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authorbibnamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authornamehash}{2b75abdfe7386373c265bc9540416dac}
+      \strng{authorfullhash}{2b75abdfe7386373c265bc9540416dac}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Norway has sometimes been described as a sociolinguistic paradise with its abundant linguistic heterogeneity —{} both written and spoken. Dialect diversity has been and is still considerable and dialects are used in practically all social domains. However, dialects in Norway are changing. In this article I will discuss the historical background for the linguistic situation in Norway, and I will take a closer look at present-day developments and discuss the structural, sociocultural, and psychological mechanisms behind them. The question is whether the dialect situation in Norway remains very different from most other parts of Europe, or if at least some areas of Norway may be experiencing similar developments.}
+      \field{chapter}{International Journal of the Sociology of Language}
+      \field{issn}{1613-3668}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{196-197}
+      \field{shorttitle}{Dialects in {{Norway}}}
+      \field{title}{Dialects in {{Norway}}: Catching up with the Rest of {{Europe}}?}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{2009}
+      \field{year}{2009}
+      \field{urldateera}{ce}
+      \field{pages}{7\bibrangedash 30}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1515/IJSL.2009.015
+      \endverb
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\2UZVYRLX\Røyneland - 2009 - Dialects in Norway catching up with the rest of E.pdf
+      \endverb
+    \endentry
     \entry{scherrerHeLjuVarDial20202020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c53e65b760b3618d1b9e40bbad6a801b}{%
@@ -657,6 +965,86 @@
       \range{pages}{6}
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\5RVDU6NE\Scherrer and Ljubešić - 2021 - Social Media Variety Geolocation with geoBERT.pdf
+      \endverb
+    \endentry
+    \entry{vaswaniAttentionAllYou2017a}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authorbibnamehash}{cb26e47f6b8133865271fc8483132297}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms. We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.}
+      \field{journaltitle}{Advances in {{Neural Information Processing Systems}}}
+      \field{title}{Attention Is {{All}} You {{Need}}}
+      \field{urlday}{10}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{30}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\7YZDRE5Z\Vaswani et al. - 2017 - Attention is All you Need.pdf
       \endverb
     \endentry
   \enddatalist

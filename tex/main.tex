@@ -108,6 +108,8 @@ acronym] 				% create a list of abbreviations
 \usepackage[acronym]{glossaries}
 \makeglossaries
 \loadglsentries[main]{glossary}
+
+{\ttfamily \hyphenchar\the\font=`\-}%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Geolocation Prediction from Jodel and Twitter Messages}
@@ -154,7 +156,8 @@ acronym] 				% create a list of abbreviations
 \input{sections/introduction}
 \input{sections/background}
 \input{sections/related_work}
-\input{sections/architecture}
+\input{sections/datasets}
+\input{sections/model}
 \input{sections/experiments}
 \input{sections/discussion}
 \input{sections/conclusion}

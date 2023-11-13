@@ -1,0 +1,6 @@
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe best results of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q came from using a language-specific acr:bert.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QAs no pre-trained model was found in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, they fine-tuned the pre-trained bert-base-german-uncased model on the SwissCrawl corpus \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QSince then, a pre-trained Swiss acr:bert model has been released, which I used in my experiments.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QThe best results of \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q came from using a language-specific acr:bert.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QAs no pre-trained model was found in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, they fine-tuned the pre-trained bert-base-german-uncased model on the SwissCrawl corpus \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QSince then, a pre-trained Swiss acr:bert model has been released, which I used in my experiments.\\E$"}
