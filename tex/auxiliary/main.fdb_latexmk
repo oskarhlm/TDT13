@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber auxiliary/main"] 1699629300 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1699713038 0
-  "./bib/bibliography.bib" 1699615802 17090 394e6007497d487103f49f3b907ffc1e ""
-  "auxiliary/main.bcf" 1699713036 134584 857f88a6d16c8cad9c645dd1081bc013 "pdflatex"
+["biber auxiliary/main"] 1699966622 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1699973007 0
+  "./bib/bibliography.bib" 1699947843 17090 394e6007497d487103f49f3b907ffc1e ""
+  "auxiliary/main.bcf" 1699973006 134750 cf591322cf952735e7bcacf8b3689771 "pdflatex"
   (generated)
   "auxiliary/main.bbl"
   "auxiliary/main.blg"
   (rewritten before read)
-["pdflatex"] 1699713032 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1699713038 0
+["pdflatex"] 1699973002 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1699973007 0
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698234802 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1696333792 24141908 d11319b594ab429b1fe2d1cce8af9935 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -42,6 +42,11 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy8.tfm" 1136765053 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy9.tfm" 1136765053 520 1cc7cc05f4d7bae5c23bf7516f88fa52 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247593067 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247593067 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247593066 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247593067 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247593067 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb" 1136846148 45758 19968a0990191524e34e1994d4a31cb6 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136849748 44729 fea0975e20ec51c992338362f05f1146 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb" 1136849748 46026 687528a208fbfc1f00832bb96cccebbb ""
@@ -259,15 +264,15 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "auxiliary/main.aux" 1699713036 8158 d89c933698160a190e6001d78f29d7ee "pdflatex"
-  "auxiliary/main.bbl" 1699629304 53107 b95a5d6a261b12ed58f13063347c30c7 "biber auxiliary/main"
-  "auxiliary/main.out" 1699713036 2259 340a84b58c386a405cfa2288d75cb73d "pdflatex"
-  "auxiliary/main.run.xml" 1699713036 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
+  "auxiliary/main.aux" 1699973006 8551 caea3b1f31eba3b947dc87b5c029534b "pdflatex"
+  "auxiliary/main.bbl" 1699966626 53107 b95a5d6a261b12ed58f13063347c30c7 "biber auxiliary/main"
+  "auxiliary/main.out" 1699973006 2259 340a84b58c386a405cfa2288d75cb73d "pdflatex"
+  "auxiliary/main.run.xml" 1699973006 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
   "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" 1699609647 5885 d8337ece14c7f5922ed74594a7b5866f ""
   "figs/BERT_overall_procedures.jpg" 1699615402 2142949 69a45f0da5dac0c467a5d0f5bb4f2c1d ""
-  "glossary.tex" 1699609872 242 4ea30918a212c8558ec14ab1ee40d4e3 ""
+  "glossary.tex" 1699965884 295 6d848c02e254662e60cd7cabe7555a4c ""
   "main.tex" 1699609647 5885 d8337ece14c7f5922ed74594a7b5866f ""
-  "sections/background.tex" 1699713030 11449 a97c8dd560a8e479f6de19e3eeadd1b1 ""
+  "sections/background.tex" 1699973001 12499 bc33a9965beb74140c10269304e48767 ""
   "sections/conclusion.tex" 1699626492 471 af04879a47e117eb73c0221e8c261449 ""
   "sections/datasets.tex" 1699609666 40 51b436bc60d958d340582441d5b4d63a ""
   "sections/discussion.tex" 1699435857 811 876ff6174eff564cc0602173c3b7a745 ""

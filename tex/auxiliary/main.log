@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.3)  11 NOV 2023 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.3)  14 NOV 2023 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1195,22 +1195,26 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 \openout5 = `main.ist'.
 
 {C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-<./figs/BERT_overall_procedures.jpg, id=121, 6831.5225pt x 2719.15875pt>
+<./figs/BERT_overall_procedures.jpg, id=129, 6831.5225pt x 2719.15875pt>
 File: ./figs/BERT_overall_procedures.jpg Graphic file (type jpg)
 <use ./figs/BERT_overall_procedures.jpg>
-Package pdftex.def Info: ./figs/BERT_overall_procedures.jpg  used on input line 132.
+Package pdftex.def Info: ./figs/BERT_overall_procedures.jpg  used on input line 137.
 (pdftex.def)             Requested size: 455.24408pt x 181.19106pt.
-) (sections/related_work.tex) (sections/datasets.tex) (sections/model.tex) (sections/experiments.tex [2 <./figs/BERT_overall_procedures.jpg (PNG copy)>]) (sections/discussion.tex) (sections/conclusion.tex)
+) (sections/related_work.tex) (sections/datasets.tex) (sections/model.tex) (sections/experiments.tex
+Underfull \vbox (badness 7099) has occurred while \output is active []
+
+ [2 <./figs/BERT_overall_procedures.jpg (PNG copy)>]) (sections/discussion.tex) (sections/conclusion.tex)
 Underfull \hbox (badness 1264) in paragraph at lines 11--164
 \T1/ptm/m/n/10.95 The code and data used dur-ing model de-vel-op-ment is avail-able at [][]$\T1/pcr/m/n/10.95 https : / / github . com /
  []
 
+[3]
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[3] (c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.aux)
+[4] (c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1222,13 +1226,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40452 strings out of 475248
- 796424 string characters out of 5757813
- 1933785 words of memory out of 5000000
- 61251 multiletter control sequences out of 15000+600000
+ 40489 strings out of 475248
+ 797086 string characters out of 5757813
+ 1934785 words of memory out of 5000000
+ 61285 multiletter control sequences out of 15000+600000
  593141 words of font info for 87 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  102i,9n,165p,2309b,8866s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:acr:rnn} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{glo:acr:lm} has been referenced but does not exist, replaced by a fixed one
 
@@ -1241,10 +1248,10 @@ pdfTeX warning (dest): name{glo:acr:nlp} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{glo:acr:smg} has been referenced but does not exist, replaced by a fixed one
 
-<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.pdf" (3 pages, 2239801 bytes).
+<C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.pdf" (4 pages, 2287152 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
  152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
