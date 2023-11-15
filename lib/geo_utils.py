@@ -64,7 +64,7 @@ def median_distance(preds, labels, scaler, config):
         labels = scaler.inverse_transform(labels)
 
     if 'projection' in config:
-        preds, labels = transform_to_latlon(preds, labels)
+        preds, labels = transform_to_latlon(preds, labels, config)
     return np.median(haversine_distance(preds, labels))
 
 def mean_distance(preds, labels, scaler, config):    
@@ -73,7 +73,7 @@ def mean_distance(preds, labels, scaler, config):
         labels = scaler.inverse_transform(labels)
     
     if 'projection' in config:
-        preds, labels = transform_to_latlon(preds, labels)
+        preds, labels = transform_to_latlon(preds, labels, config)
     return np.mean(haversine_distance(preds, labels))
 
 def to_projection(df, config): 
