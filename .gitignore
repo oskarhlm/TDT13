@@ -1,12 +1,12 @@
 venv/
-data/
-<<<<<<< HEAD
+data/ch/
+data/no/
 norway_tbcov/
 
 .env
-=======
 
 norwegian_tbcov/
 
 __pycache__/
->>>>>>> ca1787203864cd858f59a87add27b09c63e8669d
+*/swiss_shp/
+data/che_general_2020.tif

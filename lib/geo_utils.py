@@ -34,29 +34,24 @@ def haversine_distance(c1, c2):
 
     return R * c  # Distance [km]
 
-def transform_to_latlon(preds, labels, config): 
-    preds_trans = None
-    labels_trans = None
+def transform_to_latlon(latlon, config): 
+    latlon_trans = None
     
     if 'projection' not in config: 
-        return preds, labels
+        return latlon
     
     match config['projection']: 
         case 'utm': 
-            check_utm_easting_range(preds)
-            check_utm_easting_range(labels)
+            check_utm_easting_range(latlon)
 
-            preds_trans = np.array(utm.to_latlon(
-                 preds[:, 0], preds[:, 1], zone_number=config['zone_number'], zone_letter=config['zone_letter']))
-            labels_trans = np.array(utm.to_latlon(
-                 labels[:, 0], labels[:, 1], zone_number=config['zone_number'], zone_letter=config['zone_letter']))
+            latlon_trans = np.array(utm.to_latlon(
+                 latlon[:, 0], latlon[:, 1], zone_number=config['zone_number'], zone_letter=config['zone_letter']))
             
-            check_utm_easting_range(preds) 
-            check_utm_easting_range(labels)
+            check_utm_easting_range(latlon) 
         case _: 
-            return preds, labels
+            return latlon
 
-    return preds_trans, labels_trans
+    return latlon_trans
 
 def median_distance(preds, labels, scaler, config):
     if scaler:
@@ -64,7 +59,8 @@ def median_distance(preds, labels, scaler, config):
         labels = scaler.inverse_transform(labels)
 
     if 'projection' in config:
-        preds, labels = transform_to_latlon(preds, labels)
+        preds = transform_to_latlon(preds, config)
+        labels = transform_to_latlon(labels, config)
     return np.median(haversine_distance(preds, labels))
 
 def mean_distance(preds, labels, scaler, config):    
@@ -73,7 +69,8 @@ def mean_distance(preds, labels, scaler, config):
         labels = scaler.inverse_transform(labels)
     
     if 'projection' in config:
-        preds, labels = transform_to_latlon(preds, labels)
+        preds = transform_to_latlon(preds, config)
+        labels = transform_to_latlon(labels, config)
     return np.mean(haversine_distance(preds, labels))
 
 def to_projection(df, config): 
