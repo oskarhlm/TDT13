@@ -120,12 +120,22 @@ This section will elaborate on technologies central to this project. It is assum
 
 \cite{vaswaniAttentionAllYou2017a} managed to achieve new state-of-the-art results for machine translation tasks with their introduction of the Transformer architecture. The Transformer has later been proved effective for numerous downstream tasks, and for a variety of modalities. Titleing their paper \citetitle{vaswaniAttentionAllYou2017a}, \citeauthor{vaswaniAttentionAllYou2017a} suggest that their attention-based architecture renders \glspl{acr:rnn}  redundant, due to its superior parallellization abilities and the shorter path between combinations of position input and output sequences, making it easier to learn long-range dependencies \citep[6]{vaswaniAttentionAllYou2017a}.
 
-The Transformer employs self-attention, which enables the model to draw connections between arbitrary parts of a given sequence, by-passing the long-range dependency issue commonly found with \glspl{acr:rnn}. An attention function maps a query and a set of key-value pairs to an output, calculating the compatibility between a query corresponding key \citep[3]{vaswaniAttentionAllYou2017a}. Looking at \citeauthor{vaswaniAttentionAllYou2017a}'s proposed attention function \eqref{eq:attention}, we observe that we take the dot product between the query $Q$ and the keys $K$, where $Q$ is the token that we want to compare all the keys to. Keys similar to $Q$ will get a higher score, e.g. be \textit{more attended to}. These differences in attention is further emphasized be applying the softmax function. The final matrix multiplication with the values $V$, being the intitial embeddings of all input tokens, will give us a new embedding in which all tokens have some context from all other words. We improve the attention mechanism by mutiplying each query, key, and value with a learned weigth matrix. Self-attention is a special kind of attention in which queries, keys, and values are all the same input sequence.
+The Transformer employs self-attention, which enables the model to draw connections between arbitrary parts of a given sequence, by-passing the long-range dependency issue commonly found with \glspl{acr:rnn}. An attention function maps a query and a set of key-value pairs to an output, calculating the compatibility between a query corresponding key \citep[3]{vaswaniAttentionAllYou2017a}. Looking at \citeauthor{vaswaniAttentionAllYou2017a}'s proposed attention function \eqref{eq:attention}, we observe that we take the dot product between the query $Q$ and the keys $K$, where $Q$ is the token that we want to compare all the keys to. Keys similar to $Q$ will get a higher score, e.g. be \textit{more attended to}. These differences in attention is further emphasized be applying the softmax function. The final matrix multiplication with the values $V$, being the intitial embeddings of all input tokens, will give us a new embedding in which all tokens have some context from all other words. We improve the attention mechanism by mutiplying each query, key, and value with weigth matrices learned through backpropagation. Self-attention is a special kind of attention in which queries, keys, and values are all the same input sequence.
 
 \begin{equation}
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
     \label{eq:attention}
 \end{equation}
+
+Attention blocks can be found in three places \citep[5]{vaswaniAttentionAllYou2017a} in the Transformer architecture (I will use machine translation as example, say, from Norwegian to German):
+
+\begin{enumerate}
+    \item In the encoder block to perform self-attention on the input sequence (which is in Norwegian)
+    \item In the decoder block to perform self-attention on the output sequence (which is in German)
+    \item In the decoder block to perform cross-attention (or encoder-decoder attention) where each position in the decoder attends to all positions in the encoder
+\end{enumerate}
+
+The Transformer established a new state of the art in machine translation \cite{vaswaniAttentionAllYou2017a}, and is the fundamental building block of \acrshortpl{acr:lm} like \acrshort{acr:bert}.
 
 \subsection[BERT]{\acrshort{acr:bert}}
 
@@ -138,6 +148,8 @@ The Transformer employs self-attention, which enables the model to draw connecti
     \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}.}
     \label{fig:bert-high-level-overview}
 \end{figure}
+
+\subsection{}
 
 \subsection{Geodesic Terminology and Metrics}
 

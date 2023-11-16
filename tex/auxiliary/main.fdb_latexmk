@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber auxiliary/main"] 1699966622 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1700058866 0
-  "./bib/bibliography.bib" 1699947843 17090 394e6007497d487103f49f3b907ffc1e ""
-  "auxiliary/main.bcf" 1700058865 134750 cf591322cf952735e7bcacf8b3689771 "pdflatex"
+["biber auxiliary/main"] 1700128796 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1700128805 0
+  "./bib/bibliography.bib" 1700121455 17090 394e6007497d487103f49f3b907ffc1e ""
+  "auxiliary/main.bcf" 1700128804 134750 cf591322cf952735e7bcacf8b3689771 "pdflatex"
   (generated)
   "auxiliary/main.bbl"
   "auxiliary/main.blg"
   (rewritten before read)
-["pdflatex"] 1700058860 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1700058866 0
+["pdflatex"] 1700128800 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1700128805 0
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1698234802 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1696333792 24141908 d11319b594ab429b1fe2d1cce8af9935 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -264,15 +264,15 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "auxiliary/main.aux" 1700058865 8551 58b0f9ab90eaf2f14d7b5787b82d3e82 "pdflatex"
-  "auxiliary/main.bbl" 1699966626 53107 b95a5d6a261b12ed58f13063347c30c7 "biber auxiliary/main"
-  "auxiliary/main.out" 1700058865 2259 340a84b58c386a405cfa2288d75cb73d "pdflatex"
-  "auxiliary/main.run.xml" 1700058865 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
+  "auxiliary/main.aux" 1700128804 8551 58b0f9ab90eaf2f14d7b5787b82d3e82 "pdflatex"
+  "auxiliary/main.bbl" 1700128800 53107 b95a5d6a261b12ed58f13063347c30c7 "biber auxiliary/main"
+  "auxiliary/main.out" 1700128804 2259 340a84b58c386a405cfa2288d75cb73d "pdflatex"
+  "auxiliary/main.run.xml" 1700128804 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
   "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" 1699609647 5885 d8337ece14c7f5922ed74594a7b5866f ""
   "figs/BERT_overall_procedures.jpg" 1699615402 2142949 69a45f0da5dac0c467a5d0f5bb4f2c1d ""
   "glossary.tex" 1699965884 295 6d848c02e254662e60cd7cabe7555a4c ""
   "main.tex" 1699609647 5885 d8337ece14c7f5922ed74594a7b5866f ""
-  "sections/background.tex" 1699973618 12499 bc33a9965beb74140c10269304e48767 ""
+  "sections/background.tex" 1700128785 12499 bc33a9965beb74140c10269304e48767 ""
   "sections/conclusion.tex" 1699626492 471 af04879a47e117eb73c0221e8c261449 ""
   "sections/datasets.tex" 1699609666 40 51b436bc60d958d340582441d5b4d63a ""
   "sections/discussion.tex" 1699435857 811 876ff6174eff564cc0602173c3b7a745 ""
