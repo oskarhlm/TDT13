@@ -19,3 +19,23 @@ Clearly, a figure showing the architecture is a must, such as Figure~\ref{fig:Ar
     \label{fig:Architecture}
 \end{figure}
 \end{comment}
+
+Three different pre-trained models were used. When selecting models I was mostly interessted in those that are trained on Swiss corpera, seeing as this proved important in \cite{scherrerHeLjuVarDial20202020}. The models are listed in \autoref{tbl:models-used}. They were utilized through Huggingface's \texttt{transformers} Python library.
+
+\begin{table}
+    \centering
+    \begin{tabular}{l|r}
+        \toprule
+        Model Name                                               & Model Type          \\
+        \midrule
+        dbmdz/\textbf{bert-base-german-uncased}                  & \acrshort{acr:bert} \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & \acrshort{acr:bert} \\
+        ZurichNLP/\textbf{swissbert}                             & \acrshort{acr:xmod} \\
+        % ZurichNLP/\textbf{swissbert-xlm-vocab}            & \acrshort{acr:xmod} \\
+        \bottomrule
+    \end{tabular}
+    \caption{Pre-trained models used in the project}
+    \label{tbl:models-used}
+\end{table}
+
+\texttt{bert-base-german-uncased} \citep{DbmdzBertbasegermanuncasedHugging} is the same model that \cite{scherrerHeLjuVarDial20202020} used for their best solutions. It is trained of a Wikipedia dump, EU Bookshop corpus, and more. \texttt{bert-base-german-cased-finetuned-swiss} is based upon \texttt{bert-base-german-cased} and is fine-tuned on the Leipzig Corpora Collection and SwissCrawl. \texttt{ZurichNLP/swissbert} is the only non-\acrshort{acr:bert} model used. It is rather based on \acrshort{acr:xmod}, and has adapters trained for German, French, Italian, and Ramansh Grishun.

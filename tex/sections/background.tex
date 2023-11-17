@@ -140,21 +140,27 @@ The Transformer established a new state of the art in machine translation \cite{
 \subsection[BERT]{\acrshort{acr:bert}}
 
 \gls{acr:bert} is a family of language models which was first introduced in 2018 \citep{devlinBERTPretrainingDeep2019}.
-\acrshort{acr:bert} is designed to facilitate a wide range of downstream tasks. The self-attention mechanism allows for efficient bidirectional cross attention between two sentences in one step, a process which previously was done by encoding text pairs before applying bidirection cross attention \citep[5]{devlinBERTPretrainingDeep2019}. See \autoref{fig:bert-high-level-overview}.
+\acrshort{acr:bert} is designed to facilitate a wide range of downstream tasks. The self-attention mechanism allows for efficient bidirectional cross attention between two sentences in one step, a process which previously was done by encoding text pairs before applying bidirection cross attention \citep[5]{devlinBERTPretrainingDeep2019}.
 
 \begin{figure}
     \centering
     \includegraphics*[width=\textwidth]{./figs/BERT_overall_procedures.jpg}
-    \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}.}
+    \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}}
     \label{fig:bert-high-level-overview}
 \end{figure}
 
-\subsection{}
+\subsection[X-Mod]{\acrshort{acr:xmod}}
 
-\subsection{Geodesic Terminology and Metrics}
-
-Haversine formula, etc.
+\gls{acr:xmod} models \citep{pfeifferLiftingCurseMultilinguality2022} attempt to tackle the common problem of multi-linguality in language models. Typically, when one attepmts to train a  language model be multilingual by training on numerous languages, the performance tends to drop after reaching a certain level of performance - \textit{the curse of multilinguality} \citep[1]{pfeifferLiftingCurseMultilinguality2022}.
 
 \subsection{(Double) Regression}
 
 \acrshort{acr:bert} can be used for regression tasks.
+
+\subsection{Geodesic Terminology and Metrics}
+
+The evaluation is based upon the Haversine formula, with the Earth's radius is assumed to be 6371 km. The evaluation metric is the median Haversine distance between the predicted coordinates and the ground thruth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its Wikipedia page \footnote{\url{https://en.wikipedia.org/wiki/Haversine_formula}} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes".
+
+Different map projections were used in the project. The \gls{acr:utm} map projection splits Earth's surface into 60 zones in the latitudal direct and 19 zones in the longitudal direction, forming a grid. Doing this allows us to express coordinates in meters within a grid zone and still obtaining high accuracy measurements. Coordinate values in \acrshort{acr:utm} lie in the six figures, with the easting of the central meridian\footnote{\url{https://gisgeography.com/central-meridian/}} being defined to 500 000 meters to avoid negative easting values within the zone.
+
+The Swiss coordinate system, LV95 \citep{federalofficeoftopographyswisstopoSwissCoordinatesSystem}, was also explored. Its center coordinates are defined to the Swiss capital of Bern and the values lie in the seven figures.

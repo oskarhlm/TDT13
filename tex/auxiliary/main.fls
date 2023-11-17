@@ -52,6 +52,8 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\csquotes\csquotes.d
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\csquotes\csquotes.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\csquotes\csquotes.cfg
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\csquotes\csquotes.cfg
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
@@ -491,7 +493,6 @@ INPUT .\sections\background.tex
 INPUT .\sections\background.tex
 INPUT .\sections\background.tex
 INPUT sections\background.tex
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 OUTPUT c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.ist
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
@@ -505,8 +506,7 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
@@ -521,6 +521,18 @@ INPUT .\figs\BERT_overall_procedures.jpg
 INPUT .\figs\BERT_overall_procedures.jpg
 INPUT .\figs\BERT_overall_procedures.jpg
 INPUT .\figs\BERT_overall_procedures.jpg
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy9.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\sections\related_work.tex
 INPUT .\sections\related_work.tex
 INPUT .\sections\related_work.tex
@@ -531,6 +543,21 @@ INPUT .\sections\datasets.tex
 INPUT .\sections\datasets.tex
 INPUT .\sections\datasets.tex
 INPUT sections\datasets.tex
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
+INPUT .\figs\heatmap.png
 INPUT .\sections\model.tex
 INPUT .\sections\model.tex
 INPUT .\sections\model.tex
@@ -541,16 +568,6 @@ INPUT .\sections\experiments.tex
 INPUT .\sections\experiments.tex
 INPUT .\sections\experiments.tex
 INPUT sections\experiments.tex
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy9.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT .\sections\discussion.tex
 INPUT .\sections\discussion.tex
 INPUT .\sections\discussion.tex
@@ -561,14 +578,6 @@ INPUT .\sections\conclusion.tex
 INPUT .\sections\conclusion.tex
 INPUT .\sections\conclusion.tex
 INPUT sections\conclusion.tex
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.aux
 INPUT c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.out
 INPUT c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.out
