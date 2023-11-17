@@ -3,6 +3,7 @@ from torch.utils.tensorboard import SummaryWriter
 import datetime
 import csv
 import os
+from transformers import XmodForSequenceClassification, AutoModelForSequenceClassification
 
 class TensorBoardCheckpoint:
     def __init__(self, log_dir, checkpoint_path, run_name=None, best_only=True):
@@ -51,3 +52,14 @@ class TensorBoardCheckpoint:
 
     def close(self):
         self.writer.close()
+
+
+def get_model(config):
+    match config['model_type']: 
+        case 'x-mod': 
+            model = XmodForSequenceClassification.from_pretrained(config['model_name'], num_labels=2)
+            model.set_default_language('de_CH')
+        case _: 
+            model = AutoModelForSequenceClassification.from_pretrained(config['model_name'], num_labels=2)
+
+    return model

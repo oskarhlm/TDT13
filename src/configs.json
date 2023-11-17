@@ -85,5 +85,39 @@
         "projection": "utm",
         "zone_number": 32,
         "zone_letter": "T"
+    },
+    "bert-finetuned-swiss-100epoch": {
+        "train_data": "SMG2020/ch/train.txt",
+        "dev_data": "SMG2020/ch/dev.txt",
+        "scaler": "joint",
+        "model_type": "bert",
+        "model_name": "statworx/bert-base-german-cased-finetuned-swiss",
+        "lossfn": "MAELoss",
+        "save_predictions": true,
+        "train_batch_size": 32,
+        "max_seq_length": 128,
+        "epochs": 50,
+        "lr": 2e-5,
+        "seed": 42,
+        "projection": "utm",
+        "zone_number": 32,
+        "zone_letter": "T"
+    },
+    "swissbert": {
+        "train_data": "SMG2020/ch/train.txt",
+        "dev_data": "SMG2020/ch/dev.txt",
+        "scaler": "joint",
+        "model_type": "x-mod",
+        "model_name": "ZurichNLP/swissbert",
+        "lossfn": "MAELoss",
+        "save_predictions": true,
+        "train_batch_size": 32,
+        "max_seq_length": 128,
+        "epochs": 50,
+        "lr": 2e-5,
+        "seed": 42,
+        "projection": "utm",
+        "zone_number": 32,
+        "zone_letter": "T"
     }
 }
