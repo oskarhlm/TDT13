@@ -4,6 +4,9 @@ import datetime
 import csv
 import os
 from transformers import XmodForSequenceClassification, AutoModelForSequenceClassification
+from torch.optim.lr_scheduler import ReduceLROnPlateau
+from torch.nn import L1Loss, MSELoss
+
 
 class TensorBoardCheckpoint:
     def __init__(self, log_dir, checkpoint_path, run_name=None, best_only=True):
@@ -63,3 +66,22 @@ def get_model(config):
             model = AutoModelForSequenceClassification.from_pretrained(config['model_name'], num_labels=2)
 
     return model
+
+def get_scheduler(optimizer, config): 
+    if "scheduler" not in config:
+        raise "No scheduler in config"
+
+    match config["scheduler"]:
+        case "reduce_lr_on_plateau":  
+            return ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, verbose=True)
+        case _:
+            raise "Invalid scheduler name"
+        
+def get_lossfn(config):
+    match config['lossfn']:
+        case 'MAELoss' | 'L1': 
+            return L1Loss(reduction='mean')
+        case 'MSELoss' | 'L2': 
+            return MSELoss(reduction='mean')
+
+        

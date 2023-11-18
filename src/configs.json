@@ -96,7 +96,7 @@
         "save_predictions": true,
         "train_batch_size": 32,
         "max_seq_length": 128,
-        "epochs": 50,
+        "epochs": 100,
         "lr": 2e-5,
         "seed": 42,
         "projection": "utm",
@@ -119,5 +119,24 @@
         "projection": "utm",
         "zone_number": 32,
         "zone_letter": "T"
+    },
+    "bert-swiss-L2-reduced-dev-plateau": {
+        "train_data": "SMG2020/ch/train.txt",
+        "dev_data": "SMG2020/ch/dev.txt",
+        "scaler": "joint",
+        "model_type": "bert",
+        "model_name": "statworx/bert-base-german-cased-finetuned-swiss",
+        "lossfn": "L2",
+        "scheduler": "reduce_lr_on_plateau",
+        "save_predictions": true,
+        "train_batch_size": 32,
+        "max_seq_length": 128,
+        "epochs": 100,
+        "lr": 2e-5,
+        "seed": 42,
+        "projection": "utm",
+        "zone_number": 32,
+        "zone_letter": "T",
+        "split": "reduced-dev"
     }
 }
