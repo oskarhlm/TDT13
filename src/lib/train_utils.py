@@ -6,6 +6,13 @@ import os
 from transformers import XmodForSequenceClassification, AutoModelForSequenceClassification
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.nn import L1Loss, MSELoss
+from .preprocessing import scalers
+import pandas as pd
+from .geo import to_projection, GeolocationDataset, transform_to_latlon
+from tqdm import tqdm
+from .metrics import median_distance, mean_distance
+from torch.utils.data import DataLoader
+import numpy as np
 
 
 class TensorBoardCheckpoint:
@@ -83,5 +90,53 @@ def get_lossfn(config):
             return L1Loss(reduction='mean')
         case 'MSELoss' | 'L2': 
             return MSELoss(reduction='mean')
+        
+def evaluate_geolocation_model_by_checkpoint(checkpoint_dir, checkpoint_file, vardial_path, config):
+    torch.cuda.empty_cache()
+    
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = get_model(config)
+    model.to(device)
+    
+    checkpoint_path = f'{checkpoint_dir}/{checkpoint_file}'
+    checkpoint = torch.load(checkpoint_path)
+    model.load_state_dict(checkpoint['model_state_dict'])
+
+    train_data = pd.read_table(f'{vardial_path}/ch/train.txt', header=None, names=['lat', 'lon', 'text'])
+    train_data, col_names = to_projection(train_data, config)
+
+    scaler_name = config['scaler']
+    checkpoint_scaler = scalers[scaler_name]()
+    checkpoint_scaler.fit(train_data[col_names[:2]].values)
+
+    test_gold_data = pd.read_table(f'{vardial_path}/ch/test_gold.txt', header=None, names=['lat', 'lon', 'text'])
+    test_gold_data, _ = to_projection(test_gold_data, config)
+    test_gold_coords = checkpoint_scaler.transform(test_gold_data[col_names[:2]].values)
+    test_gold_dataset = GeolocationDataset(test_gold_data['text'].tolist(), test_gold_coords, config)
+    test_gold_loader = DataLoader(test_gold_dataset, batch_size=config['train_batch_size'], shuffle=False)
+
+    model.eval()
+
+    with torch.no_grad():
+        test_preds = []
+        for batch in tqdm(test_gold_loader):
+            inputs, labels = batch
+            inputs = {k: v.to(device) for k, v in inputs.items()}
+            labels = labels.to(device)
+
+            outputs = model(**inputs)
+            logits = outputs.logits
+            test_preds.append(logits.cpu().numpy())
+
+    test_preds = np.concatenate(test_preds, axis=0)
+
+    results = {
+        'median_distance': median_distance(test_gold_coords, test_preds, checkpoint_scaler, config),
+        'mean_distance': mean_distance(test_gold_coords, test_preds, checkpoint_scaler, config),
+    }
+
+    print(f'{checkpoint_file} test results: {results}\n')
+
+    return results, transform_to_latlon(checkpoint_scaler.inverse_transform(test_preds), config)
 
         

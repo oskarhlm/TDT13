@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 class JointScaler():
@@ -26,3 +27,13 @@ scalers = {
 	'independent': StandardScaler,
 	'joint': JointScaler
 }
+
+def get_reduced_dev_split(train_data, dev_data):
+    rows_to_transfer = len(dev_data) - 1000
+    transfer_data = dev_data.iloc[:rows_to_transfer]
+    dev_data = dev_data.iloc[rows_to_transfer:]
+    train_data = pd.concat([train_data, transfer_data])
+    print(f'Train size: {len(train_data)}')
+    print(f'Dev size: {len(dev_data)}')
+	
+    return train_data, dev_data

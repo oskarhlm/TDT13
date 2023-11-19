@@ -6,6 +6,7 @@ norway_tbcov/
 .env
 
 norwegian_tbcov/
+pretraining/
 
 __pycache__/
 */swiss_shp/
