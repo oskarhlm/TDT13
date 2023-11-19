@@ -19,6 +19,71 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{benitesdeazevedoesouzaZHAWInITSocialMedia2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fa106a9064dad1a6ec29c320abd93147}{%
+           family={{Benites de Azevedo e Souza}},
+           familyi={B\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fda159b8c203e1eb0a0a23267ae0ade5}{%
+           family={Hürlimann},
+           familyi={H\bibinitperiod},
+           given={Manuela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73a33077dbffa27ddeb26b7780f5ce64}{%
+           family={{von Däniken}},
+           familyi={v\bibinitperiod},
+           given={Pius},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4939fff1738344a019dbdedf5b32558a}{%
+           family={Cieliebak},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Committee on Computational Linguistics (ICCL)}%
+      }
+      \strng{namehash}{a6cb93807a4fa9fa3008203153e54a01}
+      \strng{fullhash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{bibnamehash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{authorbibnamehash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{authornamehash}{a6cb93807a4fa9fa3008203153e54a01}
+      \strng{authorfullhash}{1d456fd09bb90456af8e00021c5d7a82}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We describe our approaches for the Social Media Geolocation (SMG) task at the VarDial Evaluation Campaign 2020. The goal was to predict geographical location (latitudes and longitudes) given an input text. There were three subtasks corresponding to German-speaking Switzerland (CH), Germany and Austria (DE-AT), and Croatia, Bosnia and Herzegovina, Montenegro and Serbia (BCMS). We submitted solutions to all subtasks but focused our development efforts on the CH subtask, where we achieved third place out of 16 submissions with a median distance of 15.93 km and had the best result of 14 unconstrained systems. In the DE-AT subtask, we ranked sixth out of ten submissions (fourth of 8 unconstrained systems) and for BCMS we achieved fourth place out of 13 submissions (second of 11 unconstrained systems).}
+      \field{annotation}{Accepted: 2021-02-04T13:13:06Z}
+      \field{isbn}{978-1-952148-47-7}
+      \field{journaltitle}{Workshop on {{NLP}} for {{Similar Languages}}, {{Varieties}} and {{Dialects}}, {{Barcelona}} ({{Spain}}), Online, 13 {{December}} 2020}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shorttitle}{{{ZHAW-InIT}}}
+      \field{title}{{{ZHAW-InIT}} : Social Media Geolocation at {{VarDial}} 2020}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{254\bibrangedash 264}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.21256/zhaw-21551
+      \endverb
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\KMIQXNQG\Benites de Azevedo e Souza et al. - 2020 - ZHAW-InIT social media geolocation at VarDial 20.pdf
+      \endverb
+    \endentry
     \entry{chakravarthiFindingsVarDialEvaluation2021}{article}{}
       \name{author}{13}{}{%
         {{un=0,uniquepart=base,hash=668bf2b2730037f2f603c7940cd92fb8}{%
@@ -552,6 +617,49 @@
       \range{pages}{10}
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\DJJBDJ6G\Ljubešić et al. - 2016 - TweetGeo - A Tool for Collecting, Processing and A.pdf
+      \endverb
+    \endentry
+    \entry{lloydLeastSquaresQuantization1982a}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6326ee35fdec69f1c1ef364c98e6216}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{fullhash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{bibnamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authorbibnamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authornamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authorfullhash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It has long been realized that in pulse-code modulation (PCM), with a given ensemble of signals to handle, the quantum values should be spaced more closely in the voltage regions where the signal amplitude is more likely to fall. It has been shown by Panter and Dite that, in the limit as the number of quanta becomes infinite, the asymptotic fractional density of quanta per unit voltage should vary as the one-third power of the probability density per unit voltage of signal amplitudes. In this paper the corresponding result for any finite number of quanta is derived; that is, necessary conditions are found that the quanta and associated quantization intervals of an optimum finite quantization scheme must satisfy. The optimization criterion used is that the average quantization noise power be a minimum. It is shown that the result obtained here goes over into the Panter and Dite result as the number of quanta become large. The optimum quautization schemes for2b̂quanta,b=1,2, \textbackslash cdots, 7, are given numerically for Gaussian and for Laplacian distribution of signal amplitudes.}
+      \field{issn}{1557-9654}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Least Squares Quantization in {{PCM}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{1982}
+      \field{urldateera}{ce}
+      \field{pages}{129\bibrangedash 137}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TIT.1982.1056489
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\oskar\\Zotero\\storage\\76GNK79P\\Lloyd - 1982 - Least squares quantization in PCM.pdf;C\:\\Users\\oskar\\Zotero\\storage\\M72ZPEWY\\1056489.html
       \endverb
     \endentry
     \entry{pfeifferLiftingCurseMultilinguality2022}{inbook}{}
@@ -887,6 +995,71 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{benitesdeazevedoesouzaZHAWInITSocialMedia2020}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=fa106a9064dad1a6ec29c320abd93147}{%
+           family={{Benites de Azevedo e Souza}},
+           familyi={B\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fda159b8c203e1eb0a0a23267ae0ade5}{%
+           family={Hürlimann},
+           familyi={H\bibinitperiod},
+           given={Manuela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73a33077dbffa27ddeb26b7780f5ce64}{%
+           family={{von Däniken}},
+           familyi={v\bibinitperiod},
+           given={Pius},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4939fff1738344a019dbdedf5b32558a}{%
+           family={Cieliebak},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Committee on Computational Linguistics (ICCL)}%
+      }
+      \strng{namehash}{a6cb93807a4fa9fa3008203153e54a01}
+      \strng{fullhash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{bibnamehash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{authorbibnamehash}{1d456fd09bb90456af8e00021c5d7a82}
+      \strng{authornamehash}{a6cb93807a4fa9fa3008203153e54a01}
+      \strng{authorfullhash}{1d456fd09bb90456af8e00021c5d7a82}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We describe our approaches for the Social Media Geolocation (SMG) task at the VarDial Evaluation Campaign 2020. The goal was to predict geographical location (latitudes and longitudes) given an input text. There were three subtasks corresponding to German-speaking Switzerland (CH), Germany and Austria (DE-AT), and Croatia, Bosnia and Herzegovina, Montenegro and Serbia (BCMS). We submitted solutions to all subtasks but focused our development efforts on the CH subtask, where we achieved third place out of 16 submissions with a median distance of 15.93 km and had the best result of 14 unconstrained systems. In the DE-AT subtask, we ranked sixth out of ten submissions (fourth of 8 unconstrained systems) and for BCMS we achieved fourth place out of 13 submissions (second of 11 unconstrained systems).}
+      \field{annotation}{Accepted: 2021-02-04T13:13:06Z}
+      \field{isbn}{978-1-952148-47-7}
+      \field{journaltitle}{Workshop on {{NLP}} for {{Similar Languages}}, {{Varieties}} and {{Dialects}}, {{Barcelona}} ({{Spain}}), Online, 13 {{December}} 2020}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{shorttitle}{{{ZHAW-InIT}}}
+      \field{title}{{{ZHAW-InIT}} : Social Media Geolocation at {{VarDial}} 2020}
+      \field{urlday}{6}
+      \field{urlmonth}{10}
+      \field{urlyear}{2023}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{254\bibrangedash 264}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.21256/zhaw-21551
+      \endverb
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\KMIQXNQG\Benites de Azevedo e Souza et al. - 2020 - ZHAW-InIT social media geolocation at VarDial 20.pdf
+      \endverb
+    \endentry
     \entry{chakravarthiFindingsVarDialEvaluation2021}{article}{}
       \name{author}{13}{}{%
         {{un=0,uniquepart=base,hash=668bf2b2730037f2f603c7940cd92fb8}{%
@@ -1420,6 +1593,49 @@
       \range{pages}{10}
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\DJJBDJ6G\Ljubešić et al. - 2016 - TweetGeo - A Tool for Collecting, Processing and A.pdf
+      \endverb
+    \endentry
+    \entry{lloydLeastSquaresQuantization1982a}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e6326ee35fdec69f1c1ef364c98e6216}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{fullhash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{bibnamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authorbibnamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authornamehash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \strng{authorfullhash}{e6326ee35fdec69f1c1ef364c98e6216}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It has long been realized that in pulse-code modulation (PCM), with a given ensemble of signals to handle, the quantum values should be spaced more closely in the voltage regions where the signal amplitude is more likely to fall. It has been shown by Panter and Dite that, in the limit as the number of quanta becomes infinite, the asymptotic fractional density of quanta per unit voltage should vary as the one-third power of the probability density per unit voltage of signal amplitudes. In this paper the corresponding result for any finite number of quanta is derived; that is, necessary conditions are found that the quanta and associated quantization intervals of an optimum finite quantization scheme must satisfy. The optimization criterion used is that the average quantization noise power be a minimum. It is shown that the result obtained here goes over into the Panter and Dite result as the number of quanta become large. The optimum quautization schemes for2b̂quanta,b=1,2, \textbackslash cdots, 7, are given numerically for Gaussian and for Laplacian distribution of signal amplitudes.}
+      \field{issn}{1557-9654}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{month}{3}
+      \field{number}{2}
+      \field{title}{Least Squares Quantization in {{PCM}}}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2023}
+      \field{volume}{28}
+      \field{year}{1982}
+      \field{urldateera}{ce}
+      \field{pages}{129\bibrangedash 137}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TIT.1982.1056489
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\oskar\\Zotero\\storage\\76GNK79P\\Lloyd - 1982 - Least squares quantization in PCM.pdf;C\:\\Users\\oskar\\Zotero\\storage\\M72ZPEWY\\1056489.html
       \endverb
     \endentry
     \entry{pfeifferLiftingCurseMultilinguality2022}{inbook}{}
