@@ -3,6 +3,7 @@ import utm
 import torch 
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
+from pyproj import Proj, Transformer
 
 from .errors import check_utm_easting_range
 
@@ -22,6 +23,20 @@ class GeolocationDataset(Dataset):
         return inputs, coords
 
 
+
+def lv95_converter(lat, lon, inverse=False):
+    wgs84 = 'epsg:4326'  
+    lv95 = 'epsg:2056'  
+
+    if inverse: 
+        transformer = Transformer.from_crs(lv95, wgs84)
+    else:
+        transformer = Transformer.from_crs(wgs84, lv95)
+
+    easting, northing = transformer.transform(lat, lon)
+    return easting, northing
+
+
 def to_projection(df, config): 
     default_col_names = ['lat', 'lon', 'text']
     new_col_names = None
@@ -35,6 +50,14 @@ def to_projection(df, config):
                         row['lat'], row['lon'], 
                         force_zone_number=config['zone_number'], 
                         force_zone_letter=config['zone_letter'])[:2], 
+                    axis=1, result_type='expand')
+                df.columns = new_col_names
+            
+            case 'lv95':
+                new_col_names = ['easting', 'northing', 'text']
+
+                df[['lat', 'lon']] = df.apply(
+                    lambda row: lv95_converter(row['lat'], row['lon']),
                     axis=1, result_type='expand')
                 df.columns = new_col_names
 
@@ -55,6 +78,13 @@ def transform_to_latlon(latlon, config):
             
             check_utm_easting_range(latlon)
             return latlon_trans
+        
+        case 'lv95': 
+            latlon_trans = np.array(lv95_converter(
+                 latlon[:, 0], latlon[:, 1], inverse=True)).T
+            
+            return latlon_trans
+
         case _: 
             return latlon
 

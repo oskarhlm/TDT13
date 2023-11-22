@@ -4,7 +4,7 @@ import datetime
 import csv
 import os
 from transformers import XmodForSequenceClassification, AutoModelForSequenceClassification
-from torch.optim.lr_scheduler import ReduceLROnPlateau
+from torch.optim.lr_scheduler import ReduceLROnPlateau, OneCycleLR
 from torch.nn import L1Loss, MSELoss
 from .preprocessing import scalers
 import pandas as pd
@@ -74,13 +74,15 @@ def get_model(config):
 
     return model
 
-def get_scheduler(optimizer, config): 
+def get_scheduler(optimizer, config, **kwargs): 
     if "scheduler" not in config:
         raise "No scheduler in config"
 
     match config["scheduler"]:
         case "reduce_lr_on_plateau":  
             return ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5, verbose=True)
+        case 'one_cycle_lr': 
+            return OneCycleLR(optimizer, max_lr=0.01, steps_per_epoch=kwargs['steps_per_epoch'], epochs=config['epochs'])
         case _:
             raise "Invalid scheduler name"
         
