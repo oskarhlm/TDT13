@@ -1,12 +1,22 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["biber auxiliary/main"] 1700471565 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1700655666 0
   "./bib/bibliography.bib" 1700475194 25474 8a8da3d7a1efed61c9063d854aba50af ""
   "auxiliary/main.bcf" 1700655664 137415 1ef4d8951078db3e584d05f082111e8b "pdflatex"
+=======
+["biber auxiliary/main"] 1700421996 "auxiliary/main.bcf" "auxiliary/main.bbl" "auxiliary/main" 1700423318 0
+  "./bib/bibliography.bib" 1700421797 25893 cef9f36497f6e54280902d0942a2ef45 ""
+  "auxiliary/main.bcf" 1700423317 137336 a58334fb8f87418825ef73b0877c98f3 "pdflatex"
+>>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
   (generated)
   "auxiliary/main.bbl"
   "auxiliary/main.blg"
   (rewritten before read)
+<<<<<<< HEAD
 ["pdflatex"] 1700655658 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1700655666 0
+=======
+["pdflatex"] 1700423312 "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" "auxiliary/main.pdf" "main" 1700423318 0
+>>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
   "C:/Users/oskar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700213100 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/oskar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1696333792 24141908 d11319b594ab429b1fe2d1cce8af9935 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -266,10 +276,17 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656233290 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656233319 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
+<<<<<<< HEAD
   "auxiliary/main.aux" 1700655664 15774 2c7fdfc05bde10e9f7eb7b51eb249083 "pdflatex"
   "auxiliary/main.bbl" 1700471570 101613 5607da3ab2db43d2e98a611db102184a "biber auxiliary/main"
   "auxiliary/main.out" 1700655664 1795 11f39cf420323632dab8bc4789ef4d61 "pdflatex"
   "auxiliary/main.run.xml" 1700655664 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
+=======
+  "auxiliary/main.aux" 1700423317 15559 b9affabfa2400e3580c51e50ef121961 "pdflatex"
+  "auxiliary/main.bbl" 1700421999 103139 79914888bee482ce05d8a523a109d09e "biber auxiliary/main"
+  "auxiliary/main.out" 1700423317 1876 7f7d23a196dd55d0a1750f963e27a6da "pdflatex"
+  "auxiliary/main.run.xml" 1700423317 2602 4316acd749d90f52e916576b69c5058a "pdflatex"
+>>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
   "c:/Users/oskar/NTNU/9. semester/TDT13/tex/main.tex" 1700217961 6754 fc65311b8930cdf269fa5df9f90ece66 ""
   "figs/BERT_overall_procedures.jpg" 1699615402 2142949 69a45f0da5dac0c467a5d0f5bb4f2c1d ""
   "figs/heatmap.png" 1700233808 66279 63d43b574faf47d7f0202c03c88752cf ""
@@ -277,12 +294,21 @@
   "glossary.tex" 1700421323 510 b64bf7cb5cd0164ccb67ad97b8078473 ""
   "main.tex" 1700217961 6754 fc65311b8930cdf269fa5df9f90ece66 ""
   "sections/background.tex" 1700423311 16659 58e94b833d81422abb67fa0f4c2cb6f6 ""
+<<<<<<< HEAD
   "sections/conclusion.tex" 1700474116 354 9835b36921723c602692a29a5cd82526 ""
   "sections/datasets.tex" 1700471471 2966 a79740cfb6ba46b165c87a827a860e4b ""
   "sections/discussion.tex" 1700646542 1106 257e61a45f136cb4e1bdc2cbce055e9c ""
   "sections/experiments.tex" 1700655641 5511 ede8bdfb057b3f8587420281a7919f4b ""
   "sections/introduction.tex" 1700474126 5833 fc7ef4cb77b953188f4f7019e41a3e38 ""
   "sections/model.tex" 1700472041 3449 0e7e4037826504d8188fdf047020ec59 ""
+=======
+  "sections/conclusion.tex" 1699626492 471 af04879a47e117eb73c0221e8c261449 ""
+  "sections/datasets.tex" 1700422175 2732 90a21669675a0764fd60b2bdbe5479a9 ""
+  "sections/discussion.tex" 1699435857 811 876ff6174eff564cc0602173c3b7a745 ""
+  "sections/experiments.tex" 1700417183 2954 5d448e2ee5e66112677846b78db261b9 ""
+  "sections/introduction.tex" 1700058859 5738 d9fd814bfb662a31085b92019dc0ac6c ""
+  "sections/model.tex" 1700414407 3489 41c70a2aaddc8319143a64bb8c623910 ""
+>>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
   "sections/related_work.tex" 1700421987 4831 f9670eb4b8a99f2bd8e7d2c40bcc17f2 ""
   "tdt13.sty" 1699434041 7959 4368ef62d1cd81284e526cc5a3d8b33b ""
   (generated)

@@ -523,6 +523,11 @@ INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb8t.v
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+<<<<<<< HEAD
+=======
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT C:\Users\oskar\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+>>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
 INPUT .\figs\BERT_overall_procedures.jpg
 INPUT .\figs\BERT_overall_procedures.jpg
 INPUT .\figs\BERT_overall_procedures.jpg
