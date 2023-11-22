@@ -29,17 +29,9 @@ Clearly, a figure showing the architecture is a must, such as Figure~\ref{fig:Ar
 
 \autoref{fig:model-architecture} shows a rough model architecture. It consists of a pre-trained \acrshort{acr:bert} model with a classification head on top. This architecture is only representative for the \acrshort{acr:bert}-based models (all but one).
 
-<<<<<<< HEAD
 The pre-trained models that were tested in this project are listed in \autoref{tbl:models-used}. When selecting models I was mostly interested in those that are trained on Swiss corpera, seeing as this proved important in \cite{scherrerHeLjuVarDial20202020}. They were utilized through Huggingface's \texttt{transformers} interface.
 
 The classification head has two outputs: the latitude coordinate and the longitude coordinate. It takes as input the output corresponding to the \texttt{[CLS]} token, which captures the aggregated sequence representation. The hyperbolic tangent activation function adds some non-linearity to the output before it fed into a fully connected linear layer, where latitude and longitude values are predicted.
-=======
-The pre-trained models that were tested in this project are listed in \autoref{tbl:models-used}. When selecting models I was mostly interessted in those that are trained on Swiss corpera, seeing as this proved important in \cite{scherrerHeLjuVarDial20202020}. They were utilized through Huggingface's \texttt{transformers} interface.
-
-The classification head has two outputs: the latitude coordinate and the longitude coordinate. It takes as input the output corresponding to the \texttt{[CLS]} token, which is the first token of the input sequence. The hyperbolic tangent activation function adds some non-linearity to the output before it fed into a fully connected linear layer, where latitude and longitude values are predicted.
-
-
->>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
 
 \begin{table}
     \centering
@@ -57,9 +49,5 @@ The classification head has two outputs: the latitude coordinate and the longitu
     \label{tbl:models-used}
 \end{table}
 
-<<<<<<< HEAD
 \texttt{bert-base-german-uncased} is the same model that \cite{scherrerHeLjuVarDial20202020} used for their best solutions. It is trained of a Wikipedia dump, EU Bookshop corpus, and more. \texttt{bert-base-german-cased-finetuned-swiss} is based upon \texttt{bert-base-german-cased} and is fine-tuned on the Leipzig Corpora Collection and SwissCrawl. \texttt{ZurichNLP/swissbert} is the only non-\acrshort{acr:bert} model used. It is rather based on \acrshort{acr:xmod}, and has adapters trained for German, French, Italian, and Ramansh Grishun.
-=======
-\texttt{bert-base-german-uncased} \citep{DbmdzBertbasegermanuncasedHugging} is the same model that \cite{scherrerHeLjuVarDial20202020} used for their best solutions. It is trained of a Wikipedia dump, EU Bookshop corpus, and more. \texttt{bert-base-german-cased-finetuned-swiss} is based upon \texttt{bert-base-german-cased} and is fine-tuned on the Leipzig Corpora Collection and SwissCrawl. \texttt{ZurichNLP/swissbert} is the only non-\acrshort{acr:bert} model used. It is rather based on \acrshort{acr:xmod}, and has adapters trained for German, French, Italian, and Ramansh Grishun.
->>>>>>> 1e8b5f7da0bff769281df6de2ac2a69e2bb641a3
 

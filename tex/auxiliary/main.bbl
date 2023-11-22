@@ -399,6 +399,46 @@
       \verb C:\Users\oskar\Zotero\storage\8UCGMNYC\Gaman et al. - 2020 - A Report on the VarDial Evaluation Campaign 2020.pdf
       \endverb
     \endentry
+    \entry{goldhahnBuildingLargeMonolingual}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fbd8cf5b6b62312b39fe1dcb31288e2e}{%
+           family={Goldhahn},
+           familyi={G\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f11c8d6acf9c7e5481ac831f62f6ef82}{%
+           family={Eckart},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4766db6cf251c8be27c674b1604669b2}{%
+           family={Quasthoff},
+           familyi={Q\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3713db7710479925c90f139eaf482837}
+      \strng{fullhash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{bibnamehash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{authorbibnamehash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{authornamehash}{3713db7710479925c90f139eaf482837}
+      \strng{authorfullhash}{42e1ddfd82865acbc69121302da1a140}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Leipzig Corpora Collection offers free online access to 136 monolingual dictionaries enriched with statistical information. In this paper we describe current advances of the project in collecting and processing text data automatically for a large number of languages. Our main interest lies in languages of ``low density'', where only few text data exists online. The aim of this approach is to create monolingual dictionaries and statistical information for a high number of new languages and to expand the existing dictionaries, opening up new possibilities for linguistic typology and other research. Focus of this paper will be set on the infrastructure for the automatic acquisition of large amounts of monolingual text in many languages from various sources. Preliminary results of the collection of text data will be presented. The mainly language-independent framework for preprocessing, cleaning and creating the corpora and computing the necessary statistics will also be depicted.}
+      \field{langid}{english}
+      \field{title}{Building {{Large Monolingual Dictionaries}} at the {{Leipzig Corpora Collection}}: {{From}} 100 to 200 {{Languages}}}
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\6IV6WXZN\Goldhahn et al. - Building Large Monolingual Dictionaries at the Lei.pdf
+      \endverb
+    \endentry
     \entry{hovyCapturingRegionalVariation2018}{inbook}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=460909209014ce11714ba7d75523ebc8}{%
@@ -1357,6 +1397,46 @@
       \range{pages}{14}
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\8UCGMNYC\Gaman et al. - 2020 - A Report on the VarDial Evaluation Campaign 2020.pdf
+      \endverb
+    \endentry
+    \entry{goldhahnBuildingLargeMonolingual}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=fbd8cf5b6b62312b39fe1dcb31288e2e}{%
+           family={Goldhahn},
+           familyi={G\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f11c8d6acf9c7e5481ac831f62f6ef82}{%
+           family={Eckart},
+           familyi={E\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4766db6cf251c8be27c674b1604669b2}{%
+           family={Quasthoff},
+           familyi={Q\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3713db7710479925c90f139eaf482837}
+      \strng{fullhash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{bibnamehash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{authorbibnamehash}{42e1ddfd82865acbc69121302da1a140}
+      \strng{authornamehash}{3713db7710479925c90f139eaf482837}
+      \strng{authorfullhash}{42e1ddfd82865acbc69121302da1a140}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Leipzig Corpora Collection offers free online access to 136 monolingual dictionaries enriched with statistical information. In this paper we describe current advances of the project in collecting and processing text data automatically for a large number of languages. Our main interest lies in languages of ``low density'', where only few text data exists online. The aim of this approach is to create monolingual dictionaries and statistical information for a high number of new languages and to expand the existing dictionaries, opening up new possibilities for linguistic typology and other research. Focus of this paper will be set on the infrastructure for the automatic acquisition of large amounts of monolingual text in many languages from various sources. Preliminary results of the collection of text data will be presented. The mainly language-independent framework for preprocessing, cleaning and creating the corpora and computing the necessary statistics will also be depicted.}
+      \field{langid}{english}
+      \field{title}{Building {{Large Monolingual Dictionaries}} at the {{Leipzig Corpora Collection}}: {{From}} 100 to 200 {{Languages}}}
+      \verb{file}
+      \verb C:\Users\oskar\Zotero\storage\6IV6WXZN\Goldhahn et al. - Building Large Monolingual Dictionaries at the Lei.pdf
       \endverb
     \endentry
     \entry{hovyCapturingRegionalVariation2018}{inbook}{}

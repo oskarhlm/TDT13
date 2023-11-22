@@ -5,3 +5,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QAs no pre-trained model was found in \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q, they fine-tuned the pre-trained bert-base-german-uncased model on the SwissCrawl corpus \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QSince then, a pre-trained Swiss acr:bert model has been released, which I used in my experiments.\\E$"}
 {"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qwhere \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q and \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q are latitude and longitude values.\\E$"}
+{"rule":"SI_UNITS_OF_MEASUREMENT_ADJECTIVES_AME","sentence":"^\\QNo real differnece in performance was observed when using the UTM projection over raw latitude/longitude values, but the Swiss-native LV95 projection gave the model a performance boost into the 15-kilometer range.\\E$"}
