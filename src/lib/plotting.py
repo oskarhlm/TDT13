@@ -35,6 +35,16 @@ def plot_switzerland(test_preds, test_gold_data, data_path):
     cbar.ax.tick_params(labelsize=font_size)  
     cbar.ax.set_ylabel('Distance to Ground Truth (km)', fontsize=font_size)
 
+    ax.set_xticks([])
+    ax.set_yticks([])
+
+    ax.set_xlabel('')
+    ax.set_ylabel('')
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_visible(False)
+    ax.spines['bottom'].set_visible(False)
+
     plt.show()
 
 
@@ -46,12 +56,12 @@ def plot_barchart(test_preds, test_gold_data):
     distance_bins = np.linspace(np.min(distances), np.max(distances), num_bins + 1)
     hist, bin_edges = np.histogram(distances, bins=distance_bins)
 
-    plt.figure(figsize=(20, 10))
+    plt.figure(figsize=(9, 4))
     bar_width = np.diff(bin_edges)[0] * 0.8 
     plt.bar(bin_edges[:-1], hist, width=bar_width, align='edge', color='b', alpha=0.7)
     plt.xlabel('Distance to Ground Truth (km)')
     plt.ylabel('Number of Data Points')
-    plt.title('Distribution of Predicted Distances to Ground Truth')
+    # plt.title('Distribution of Predicted Distances to Ground Truth')
     plt.grid(axis='y', linestyle='--', alpha=0.6)
 
     plt.show()
