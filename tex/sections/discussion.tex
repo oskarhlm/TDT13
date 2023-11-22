@@ -1,4 +1,4 @@
-\section{Evaluation and Discussion}
+\section{Discussion}
 \label{sec:Discussion}
 
 \begin{comment}
@@ -8,5 +8,7 @@ When evaluating your results, avoid drawing grand conclusions, beyond those that
 Further, although you may have designed your experiments to answer certain questions,
 the results may raise other questions in the eyes of the reader.
 It is important that you study the graphs/tables to look for unusual features/entries, and discuss these as well as the main findings.
-In particular, carry out an error analysis: What went wrong and why?
+In particular, carry out an error analysis: b went wrong and why?
 \end{comment}
+
+It is clear from the results that the learning rate schedulers used did not improve the test score. While both the \texttt{ReduceLROnPlateau} and \texttt{OneCycleLR} optimizers were able to greately reduce the convergence time, they were unable to reduce improve the metric score as well as they did the loss.

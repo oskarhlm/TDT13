@@ -1,7 +1,7 @@
 \section{Datasets}
 \label{sec:datasets}
 
-The dataset provided by VarDial includes training, development, test gold, and test datasets. All but the test dataset has a ground truth associated with it. The training, development, and test gold datasets have 22600, 3097, and 3068 samples, respectively. \autoref{tbl:train-dataset} shows the first five rows of the training dataset. It was collected by \cite[2-3]{hovyCapturingRegionalVariation2018} using the (at the time) publicly available Jodel API.
+Data from VarDial 2020 and 2021 was acquired from a GitHub repository\footnote{\url{https://github.com/yvesscherrer/vardial-shared-tasks}} created by Yves Scherrer's, co-author of the winning solution for the \gls{acr:smg} task, both years. All but the test dataset has a ground truth associated with it, and I assume this unlabelled test dataset was used for a private leaderboard. The training, development, and test gold datasets have 22600, 3097, and 3068 labelled samples, respectively. \autoref{tbl:train-dataset} shows the first five rows of the training dataset. It was collected by \cite[2-3]{hovyCapturingRegionalVariation2018} using the (at the time) publicly available Jodel API.
 
 \begin{table}
     \centering
@@ -25,7 +25,7 @@ While Switzerland is a country with four official languages (Swiss-German, Frenc
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{./figs/heatmap.png}
-    \caption{Heatmap based on the training data}
+    \caption{Heatmap of the training data}
     \label{fig:heatmap}
 \end{figure}
 

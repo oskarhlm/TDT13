@@ -7,22 +7,18 @@ However, to have a chance of success you need a plan driving the experimental re
 So first decide what experiments or series of experiments you plan --- and describe them in this section.
 \end{comment}
 
+In this section I will elaborate on my approach when training models, before presenting the most important findings from my experiments.
+
 \subsection{Experimental Setup}
 \label{sec:experimentalSetup}
 
 % The experimental setup should include all data --- parameters, etc. --- that would allow a person to repeat your experiments.
 
-All experiments were performed on an NVIDIA GeForce RTX 4090, having 24 GB G6X memory.\footnote{\url{https://www.nvidia.com/nb-no/geforce/graphics-cards/40-series/rtx-4090/}} Computing resources belong to the Department of Geomatics at NTNU and are shared with fellow 5th year geomatics students. I opted for PyTorch\footnote{\url{https://pytorch.org/}} in my experiments unlike \cite{scherrerHeLjuVarDial20202020}, who used the high-level SimpleTransformers\footnote{\url{https://simpletransformers.ai/}} library.
+All experiments were performed on an NVIDIA GeForce RTX 4090, having 24 GB G6X memory\footnote{\url{https://www.nvidia.com/nb-no/geforce/graphics-cards/40-series/rtx-4090/}}. Computing resources belong to the Department of Geomatics at NTNU and are shared with fellow 5th year geomatics students. PyTorch\footnote{\url{https://pytorch.org/}} was used to create a training loop, and Huggingface's \texttt{transformers} library was used to fetch pre-trained models from their hub.
 
-Charts are generated using the Python Matplotlib library, and maps are created using the open-source geographical information system QGIS\footnote{\url{https://qgis.org/da/site/}}.
+The best results of \cite{scherrerHeLjuVarDial20202020} came from using a language-specific \acrshort{acr:bert}. As no pre-trained model was found in \citeyear{scherrerHeLjuVarDial20202020}, they fine-tuned the pre-trained \texttt{bert-base-german-uncased}\footnote{\url{https://huggingface.co/bert-base-german-uncased}} model on the SwissCrawl corpus \citep[3-4]{scherrerHeLjuVarDial20202020}. Since then, a pre-trained Swiss \acrshort{acr:bert} model\footnote{\url{https://huggingface.co/statworx/bert-base-german-cased-finetuned-swiss}} has been released, which I used in my experiments.
 
-\subsubsection{German-speaking Switzerland}
-
-Data from VarDial 2020 and 2021 was acquired from a GitHub repository\footnote{\url{https://github.com/yvesscherrer/vardial-shared-tasks}} created by Yves Scherrer's, co-author of the winning solution for the \gls{acr:smg} task, both years.
-
-The best results of \cite{scherrerHeLjuVarDial20202020} came from using a language-specific \acrshort{acr:bert}. As no pre-trained model was found in \citeyear{scherrerHeLjuVarDial20202020}, they fine-tuned the pre-trained \texttt{bert-base-german-uncased}\footnote{\url{https://huggingface.co/bert-base-german-uncased}} model on the SwissCrawl corpus \citep[3-4]{scherrerHeLjuVarDial20202020}. Since then, a pre-trained Swiss \acrshort{acr:bert} model has been released\footnote{\url{https://huggingface.co/statworx/bert-base-german-cased-finetuned-swiss}}, which I used in my experiments.
-
-\subsubsection{Norway}
+Becuase of the limited timespan and computing resources of this project, I opted to freeze certain of \citeauthor{scherrerHeLjuVarDial20202020}'s hyperparameter. This includes the maximum sequence length and the batch size, the latter of which was also limited by the GPU memory. The loss function (MAE/L1) and scaler (joint \citep[5]{scherrerHeLjuVarDial20202020}) also largely remained unchanged. The focus of my experiments was to compare performance of pre-trained model, and seeing what effect different coordinate projections and learning rates have.
 
 \subsection{Experimental Results}
 \label{sec:experimentalResults}
@@ -38,3 +34,30 @@ You may wish to present a subset in the experimental section and provide additio
 If there are specific points related to one experiment that you want to discuss in more detail, it could be reasonable to do
 that already in this section; however, save the main overall discussion for Section~\ref{sec:Discussion}.
 \end{comment}
+
+A total of 15 models were trained. \autoref{tbl:highlighted-results} shows a selection of the most interresting results along with to coordinate projection and learning rate/learning rate scheduler used. A full overview of configurations and their corresponding results can be found on the project's \href{https://github.com/oskarhlm/TDT13}{GitHub page}. Fine-tuned models and training logs can be found in this \href{https://drive.google.com/drive/folders/1-6nAdhvf5DBHtWzpZa6iH7z0dFETi80h?usp=sharing}{Google Drive folder}.
+
+The best results was achieved when using the \texttt{statworx/bert-base-german-cased-finetuned-swiss} pre-trained \acrshort{acr:bert}.
+
+\begin{table}
+    \centering
+    \begin{tabular}{p{0.4\textwidth}|p{0.12\textwidth}|p{0.13\textwidth}|r}
+        \toprule
+        Pre-trained model                                        & Coordinate Projection & LR/Scheduler & Median Distance [km] \\
+        \midrule
+        dbmdz/\textbf{bert-base-german-uncased}                  & lat/lon               & 4e-5         & 17.81                \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & lat/lon               & 4e-5         & 17.08                \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & UTM                   & Plateau      & 16.52*               \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & UTM                   & 2e-5         & 16.05*               \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & lat/lon               & 2e-5         & 16.19*               \\
+        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & LV95                  & 2e-5         & \textbf{15.76}*      \\
+        ZurichNLP/\textbf{swissbert}                             & UTM                   & 2e-5         & 17.59*               \\
+        \bottomrule
+    \end{tabular}
+    \caption{Highlighted results}
+    \bigskip
+    \raggedright
+    * Proportion of developmentset used as additional samples for training \\
+    \label{tbl:highlighted-results}
+\end{table}
+
