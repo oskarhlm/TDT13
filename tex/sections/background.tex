@@ -139,8 +139,13 @@ The Transformer established a new state of the art in machine translation \cite{
 
 \subsection[BERT]{\acrshort{acr:bert}}
 
-\gls{acr:bert} is a family of language models which was first introduced in 2018 \citep{devlinBERTPretrainingDeep2019}.
-\acrshort{acr:bert} is designed to facilitate a wide range of downstream tasks. The self-attention mechanism allows for efficient bidirectional cross attention between two sentences in one step, a process which previously was done by encoding text pairs before applying bidirection cross attention \citep[5]{devlinBERTPretrainingDeep2019}.
+\gls{acr:bert} is a family of language models which was first introduced in 2018 and is designed to facilitate a wide range of downstream tasks \citep[5]{devlinBERTPretrainingDeep2019}. The \acrshort{acr:bert} architecture consists of stacked bidirectional Transformer encoders. The self-attention mechanism coupled with a masked language modelling pre-training step allows for training of deep bidirectional representations. 15 percent of words are masked with the special \texttt{[MASK]} token during this pre-training step and left for the model to predict \citep[4]{devlinBERTPretrainingDeep2019}. The second of the two unsupervised tasks used during pre-training, is \gls{acr:nsp}, where the special \texttt{[CLS]} (found at the start of each tokenized sequence) is used to predict if a senctece \texttt{B} follows \texttt{A}. The input representation then looks like this:
+
+$$
+    \texttt{[CLS]}\text{ this is sentence A }\texttt{[SEP]}\text{ and this is sentence B }\texttt{[SEP]}
+$$
+
+\autoref{fig:bert-high-level-overview} shows a high-level overview of the pre-traning and fine-tuning procedures. For the pre-training, each token of the input sequence, consisting of a sentence pair and the classification token, \texttt{[CLS]}, is transformed into embeddings (vector representations). These per-token embeddings include information of the meaning of the word itself, the meaning of the sentence/segment it belongs to, and the token's position in the full input. These embeddings are the pass through a stack of Transformer encoders (12 and 24 for \textbf{\acrshort{acr:bert}\textsubscript{BASE}} and \textbf{\acrshort{acr:bert}\textsubscript{LARGE}}, respectively), allowing the model to learn more complex patterns and of different granularities (token, sentence, document).
 
 \begin{figure}
     \centering
@@ -149,17 +154,22 @@ The Transformer established a new state of the art in machine translation \cite{
     \label{fig:bert-high-level-overview}
 \end{figure}
 
+\todo{Fine-tuning}
+
 \subsection[X-Mod]{\acrshort{acr:xmod}}
 
 \gls{acr:xmod} models \citep{pfeifferLiftingCurseMultilinguality2022} attempt to tackle the common problem of multi-linguality in language models. Typically, when one attepmts to train a  language model be multilingual by training on numerous languages, the performance tends to drop after reaching a certain level of performance - \textit{the curse of multilinguality} \citep[1]{pfeifferLiftingCurseMultilinguality2022}.
 
-\subsection{(Double) Regression}
-
-\acrshort{acr:bert} can be used for regression tasks.
-
 \subsection{Geodesic Terminology and Metrics}
 
-The evaluation is based upon the Haversine formula, with the Earth's radius is assumed to be 6371 km. The evaluation metric is the median Haversine distance between the predicted coordinates and the ground thruth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its Wikipedia page \footnote{\url{https://en.wikipedia.org/wiki/Haversine_formula}} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes".
+The evaluation is based upon the Haversine formula, with the Earth's radius is assumed to be 6371 km. The evaluation metric is the median Haversine distance \eqref{eq:haversine} between the predicted coordinates and the ground thruth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its Wikipedia page\footnote{\url{https://en.wikipedia.org/wiki/Haversine_formula}} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes". The distance $d$ can be expressed as
+
+\begin{equation}
+    d = 2r \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1)\cos(\phi_2)\sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right)
+    \label{eq:haversine}
+\end{equation}
+
+\noindent where $\phi$ and $\lambda$ are latitude and longitude values.
 
 Different map projections were used in the project. The \gls{acr:utm} map projection splits Earth's surface into 60 zones in the latitudal direct and 19 zones in the longitudal direction, forming a grid. Doing this allows us to express coordinates in meters within a grid zone and still obtaining high accuracy measurements. Coordinate values in \acrshort{acr:utm} lie in the six figures, with the easting of the central meridian\footnote{\url{https://gisgeography.com/central-meridian/}} being defined to 500 000 meters to avoid negative easting values within the zone.
 
