@@ -1,4 +1,4 @@
-\section{Evaluation and Discussion}
+\section{Discussion}
 \label{sec:Discussion}
 
 \begin{comment}
@@ -8,5 +8,11 @@ When evaluating your results, avoid drawing grand conclusions, beyond those that
 Further, although you may have designed your experiments to answer certain questions,
 the results may raise other questions in the eyes of the reader.
 It is important that you study the graphs/tables to look for unusual features/entries, and discuss these as well as the main findings.
-In particular, carry out an error analysis: What went wrong and why?
+In particular, carry out an error analysis: b went wrong and why?
 \end{comment}
+
+Results show that the Swiss LV95 map projection proved most efficient for predicting geolocation from Swiss Jodel messages. This may indicate that using a metric \gls{acr:crs} like LV95 over a spherical representation like latitude and longitude value can be beneficial in a double regression task on predicting geographical coordinates. It could seem that the model finds it harder to learn spherical representations. Using the metric UTM projection also yielded minor improvements over latitude/longitude coordinate representations. These findings are counter to those of \cite[5]{scherrerHeLjuVarDial20202020}, who found that raw latitude and longitude does not perform worse.
+
+Not surprisingly, the language-specific model (\texttt{bert-base-german-cased-finetuned-swiss}) proved more suitable this task. Being trained on the Leipzig Corpora Collection \citep{goldhahnBuildingLargeMonolingual} and SwissCrawl \citep{linderAutomaticCreationText2020}, its creators were able to improve show a 5 percent improvement over its German parent model (\texttt{bert-base-german-cased}\footnote{\url{https://huggingface.co/bert-base-german-cased}}). It seems this fine-tuning enhances the model's ability to pick up on dialectal details in the data. The X-Mod-based \texttt{swissbert} model, which is based on a model designed to be multilingual \citep{pfeifferLiftingCurseMultilinguality2022}, did not seem to possess the same dialectal knowledge, and performed only marginally better than the German \texttt{ber-base-german-uncased} model.
+
+Furthermore, it is clear from the results that the learning rate schedulers used did not improve the test score. \texttt{ReduceLROnPlateau} and \texttt{OneCycleLR} were tested and while they were able to greately reduce the convergence time, they were unable to achieve satisfiable median distances. Since the schedulers showed such little promise for this task they were not investigated much further. I do think, however, that they could prove efficient if one can find a suitable set of initialization parameters.
