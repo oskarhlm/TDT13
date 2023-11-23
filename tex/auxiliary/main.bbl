@@ -788,54 +788,6 @@
       \verb C:\Users\oskar\Zotero\storage\E9JIW4LV\Pfeiffer et al. - 2022 - Lifting the Curse of Multilinguality by Pre-traini.pdf
       \endverb
     \endentry
-    \entry{roynelandDialectsNorwayCatching2009}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2b75abdfe7386373c265bc9540416dac}{%
-           family={R{ø}yneland},
-           familyi={R\bibinitperiod},
-           given={Unn},
-           giveni={U\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {De Gruyter Mouton}%
-      }
-      \strng{namehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{fullhash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{bibnamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authorbibnamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authornamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authorfullhash}{2b75abdfe7386373c265bc9540416dac}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Norway has sometimes been described as a sociolinguistic paradise with its abundant linguistic heterogeneity —{} both written and spoken. Dialect diversity has been and is still considerable and dialects are used in practically all social domains. However, dialects in Norway are changing. In this article I will discuss the historical background for the linguistic situation in Norway, and I will take a closer look at present-day developments and discuss the structural, sociocultural, and psychological mechanisms behind them. The question is whether the dialect situation in Norway remains very different from most other parts of Europe, or if at least some areas of Norway may be experiencing similar developments.}
-      \field{chapter}{International Journal of the Sociology of Language}
-      \field{issn}{1613-3668}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{196-197}
-      \field{shorttitle}{Dialects in {{Norway}}}
-      \field{title}{Dialects in {{Norway}}: Catching up with the Rest of {{Europe}}?}
-      \field{urlday}{10}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{volume}{2009}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{7\bibrangedash 30}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1515/IJSL.2009.015
-      \endverb
-      \verb{file}
-      \verb C:\Users\oskar\Zotero\storage\2UZVYRLX\Røyneland - 2009 - Dialects in Norway catching up with the rest of E.pdf
-      \endverb
-    \endentry
     \entry{scherrerHeLjuVarDial20202020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=c53e65b760b3618d1b9e40bbad6a801b}{%
@@ -1786,54 +1738,6 @@
       \endverb
       \verb{file}
       \verb C:\Users\oskar\Zotero\storage\E9JIW4LV\Pfeiffer et al. - 2022 - Lifting the Curse of Multilinguality by Pre-traini.pdf
-      \endverb
-    \endentry
-    \entry{roynelandDialectsNorwayCatching2009}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=2b75abdfe7386373c265bc9540416dac}{%
-           family={R{ø}yneland},
-           familyi={R\bibinitperiod},
-           given={Unn},
-           giveni={U\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {De Gruyter Mouton}%
-      }
-      \strng{namehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{fullhash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{bibnamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authorbibnamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authornamehash}{2b75abdfe7386373c265bc9540416dac}
-      \strng{authorfullhash}{2b75abdfe7386373c265bc9540416dac}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Norway has sometimes been described as a sociolinguistic paradise with its abundant linguistic heterogeneity —{} both written and spoken. Dialect diversity has been and is still considerable and dialects are used in practically all social domains. However, dialects in Norway are changing. In this article I will discuss the historical background for the linguistic situation in Norway, and I will take a closer look at present-day developments and discuss the structural, sociocultural, and psychological mechanisms behind them. The question is whether the dialect situation in Norway remains very different from most other parts of Europe, or if at least some areas of Norway may be experiencing similar developments.}
-      \field{chapter}{International Journal of the Sociology of Language}
-      \field{issn}{1613-3668}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{196-197}
-      \field{shorttitle}{Dialects in {{Norway}}}
-      \field{title}{Dialects in {{Norway}}: Catching up with the Rest of {{Europe}}?}
-      \field{urlday}{10}
-      \field{urlmonth}{11}
-      \field{urlyear}{2023}
-      \field{volume}{2009}
-      \field{year}{2009}
-      \field{urldateera}{ce}
-      \field{pages}{7\bibrangedash 30}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1515/IJSL.2009.015
-      \endverb
-      \verb{file}
-      \verb C:\Users\oskar\Zotero\storage\2UZVYRLX\Røyneland - 2009 - Dialects in Norway catching up with the rest of E.pdf
       \endverb
     \endentry
     \entry{scherrerHeLjuVarDial20202020}{article}{}
