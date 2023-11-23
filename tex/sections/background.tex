@@ -114,20 +114,20 @@ e.g., that $94.99$ is an amazing F$_1$-score for the English-Gujarati language p
     Be sure to at least make a note about it somewhere.}
 \end{comment}
 
-This section will elaborate on technologies central to this project. It is assumed that the reader has basic understanding of what \glspl{acr:lm} are, and also that they are somewhat wandered in the world of \acrfull{acr:nlp}.
+This section will elaborate on technologies central to this project. It is assumed that the reader has a basic understanding of what \glspl{acr:lm} are, and also that they are somewhat versed in the world of \acrfull{acr:nlp}.
 
 \subsection{The Transformer Architecture}
 
-\cite{vaswaniAttentionAllYou2017a} managed to achieve new state-of-the-art results for machine translation tasks with their introduction of the Transformer architecture. The Transformer has later been proved effective for numerous downstream tasks, and for a variety of modalities. Titleing their paper \citetitle{vaswaniAttentionAllYou2017a}, \citeauthor{vaswaniAttentionAllYou2017a} suggest that their attention-based architecture renders \glspl{acr:rnn}  redundant, due to its superior parallellization abilities and the shorter path between combinations of position input and output sequences, making it easier to learn long-range dependencies \citep[6]{vaswaniAttentionAllYou2017a}.
+\cite{vaswaniAttentionAllYou2017a} managed to achieve new state-of-the-art results for machine translation tasks with their introduction of the Transformer architecture. The Transformer has later been proved effective for numerous downstream tasks, and for a variety of modalities. Titling their paper \citetitle{vaswaniAttentionAllYou2017a}, \citeauthor{vaswaniAttentionAllYou2017a} suggest that their attention-based architecture renders \glspl{acr:rnn} redundant, due to its superior parallelization abilities and the shorter path between combinations of position input and output sequences, making it easier to learn long-range dependencies \citep[6]{vaswaniAttentionAllYou2017a}.
 
-The Transformer employs self-attention, which enables the model to draw connections between arbitrary parts of a given sequence, by-passing the long-range dependency issue commonly found with \glspl{acr:rnn}. An attention function maps a query and a set of key-value pairs to an output, calculating the compatibility between a query corresponding key \citep[3]{vaswaniAttentionAllYou2017a}. Looking at \citeauthor{vaswaniAttentionAllYou2017a}'s proposed attention function \eqref{eq:attention}, we observe that we take the dot product between the query $Q$ and the keys $K$, where $Q$ is the token that we want to compare all the keys to. Keys similar to $Q$ will get a higher score, e.g. be \textit{more attended to}. These differences in attention is further emphasized be applying the softmax function. The final matrix multiplication with the values $V$, being the intitial embeddings of all input tokens, will give us a new embedding in which all tokens have some context from all other words. We improve the attention mechanism by mutiplying each query, key, and value with weigth matrices learned through backpropagation. Self-attention is a special kind of attention in which queries, keys, and values are all the same input sequence.
+The Transformer employs self-attention, which enables the model to draw connections between arbitrary parts of a given sequence, bypassing the long-range dependency issue commonly found with \glspl{acr:rnn}. An attention function maps a query and a set of key-value pairs to an output, calculating the compatibility between a query and a corresponding key \citep[3]{vaswaniAttentionAllYou2017a}. Looking at \citeauthor{vaswaniAttentionAllYou2017a}'s proposed attention function \eqref{eq:attention}, we observe that we take the dot product between the query $Q$ and the keys $K$, where $Q$ is the token that we want to compare all the keys to. Keys similar to $Q$ will get a higher score, e.g., be \textit{more attended to}. These differences in attention are further emphasized by applying the softmax function. The final matrix multiplication with the values $V$, being the initial embeddings of all input tokens, will give us a new embedding in which all tokens have some context from all other words. We improve the attention mechanism by multiplying queries, keys, and values with weight matrices learned through backpropagation. Self-attention is a special kind of attention in which queries, keys, and values are all the sequence.
 
 \begin{equation}
     \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
     \label{eq:attention}
 \end{equation}
 
-Attention blocks can be found in three places \citep[5]{vaswaniAttentionAllYou2017a} in the Transformer architecture (I will use machine translation as example, say, from Norwegian to German):
+Attention blocks can be found in three places in the Transformer architecture \citep[5]{vaswaniAttentionAllYou2017a} (I will use machine translation from Norwegian to German as an example):
 
 \begin{enumerate}
     \item In the encoder block to perform self-attention on the input sequence (which is in Norwegian)
@@ -139,30 +139,23 @@ The Transformer established a new state of the art in machine translation \cite{
 
 \subsection[BERT]{\acrshort{acr:bert}}
 
-\gls{acr:bert} is a family of language models which was first introduced in 2018 and is designed to facilitate a wide range of downstream tasks \citep[5]{devlinBERTPretrainingDeep2019}. The \acrshort{acr:bert} architecture consists of stacked bidirectional Transformer encoders. The self-attention mechanism coupled with a masked language modelling pre-training step allows for training of deep bidirectional representations. 15 percent of words are masked with the special \texttt{[MASK]} token during this pre-training step and left for the model to predict \citep[4]{devlinBERTPretrainingDeep2019}. The second of the two unsupervised tasks used during pre-training, is \gls{acr:nsp}, where the special \texttt{[CLS]} (found at the start of each tokenized sequence) is used to predict if a senctece \texttt{B} follows \texttt{A}. The input representation then looks like this:
+\gls{acr:bert} is a family of language models which was first introduced in 2018 and is designed to facilitate a wide range of downstream tasks \citep[5]{devlinBERTPretrainingDeep2019}. The \acrshort{acr:bert} architecture consists of stacked bidirectional Transformer encoders. The self-attention mechanism coupled with a masked language modeling pre-training step allows for training of deep bidirectional representations. 15 percent of words are masked with the special \texttt{[MASK]} token during this pre-training step and left for the model to predict \citep[4]{devlinBERTPretrainingDeep2019}. The second of the two unsupervised tasks used during pre-training is \gls{acr:nsp}, where the special \texttt{[CLS]} (found at the start of each tokenized sequence) is used to predict if a sentence \texttt{B} follows \texttt{A}. The input representation then looks like this:
 
 $$
-    \texttt{[CLS]}\text{ this is sentence A }\texttt{[SEP]}\text{ and this is sentence B }\texttt{[SEP]}
+    \texttt{[CLS]} \text{ this is sentence A } \texttt{[SEP]} \text{ and this is sentence B } \texttt{[SEP]}
 $$
 
-In the \acrshort{acr:bert} framework there are two training steps, namely the pre-traning and fine-tuning procedures. For the pre-training, each token of the input sequence, consisting of a sentence pair and the classification token, \texttt{[CLS]}, is transformed into embeddings (vector representations). These per-token embeddings include information of the meaning of the word itself, the meaning of the sentence/segment it belongs to, and the token's position in the full input. These embeddings are the pass through a stack of Transformer encoders (12 and 24 for \textbf{\acrshort{acr:bert}\textsubscript{BASE}} and \textbf{\acrshort{acr:bert}\textsubscript{LARGE}}, respectively), allowing the model to learn more complex patterns and of different granularities (token, sentence, document).
+In the \acrshort{acr:bert} framework, there are two training steps, namely the pre-training and fine-tuning procedures. For the pre-training, each token of the input sequence, consisting of a sentence pair and the classification token \texttt{[CLS]}, is transformed into embeddings (vector representations). These per-token embeddings include information about the meaning of the word itself, the meaning of the sentence/segment it belongs to, and the token's position in the full input. These embeddings then pass through a stack of Transformer encoders (12 and 24 for \textbf{\acrshort{acr:bert}\textsubscript{BASE}} and \textbf{\acrshort{acr:bert}\textsubscript{LARGE}}, respectively), allowing the model to learn more complex patterns and of different granularities (token, sentence, document) \citep[5]{devlinBERTPretrainingDeep2019}.
 
-\acrshort{acr:bert} is normally fine-tuned to specific downstream tasks by using the \texttt{[CLS]} token, which captures an aggregated prepresentation of the input sequence. This vector representation can then be used as input to a classification layer for tasks like multi-label classification and regression.
-
-% \begin{figure}
-%     \centering
-%     \includegraphics*[width=\textwidth]{./figs/BERT_overall_procedures.jpg}
-%     \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}}
-%     \label{fig:bert-high-level-overview}
-% \end{figure}
+\acrshort{acr:bert} is normally fine-tuned to specific downstream tasks by using the \texttt{[CLS]} token, which captures an aggregated representation of the input sequence. This vector representation can then be used as input to a classification layer for tasks like multi-label classification and regression.
 
 \subsection[X-Mod]{\acrshort{acr:xmod}}
 
-\gls{acr:xmod} models \citep{pfeifferLiftingCurseMultilinguality2022} attempt to tackle the common problem of multi-linguality in language models. Typically, when one attepmts to train a  language model be multilingual by training on numerous languages, the performance tends to drop after reaching a certain level of performance - \textit{the curse of multilinguality}. The model creators at Meta AI claim that X-Mod mitigates the negative interference between languages and unlocks improved monolinual and cross-lingual performance \citep[1]{pfeifferLiftingCurseMultilinguality2022}.
+\gls{acr:xmod} models \citep{pfeifferLiftingCurseMultilinguality2022} attempt to tackle the common problem of multilinguality in language models. Typically, when one attempts to train a language model to be multilingual by training on numerous languages, the performance tends to drop after reaching a certain level - \textit{the curse of multilinguality}. The model creators at Meta AI claim that X-Mod mitigates the negative interference between languages and unlocks improved monolingual and cross-lingual performance \citep[1]{pfeifferLiftingCurseMultilinguality2022}.
 
 \subsection{Geodesic Terminology and Metrics}
 
-The evaluation is based upon the Haversine formula, with the Earth's radius is assumed to be 6371 km. The evaluation metric is the median Haversine distance \eqref{eq:haversine} between the predicted coordinates and the ground thruth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its Wikipedia page\footnote{\url{https://en.wikipedia.org/wiki/Haversine_formula}} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes". The distance $d$ can be expressed as
+The evaluation is based upon the Haversine formula, with the Earth's radius assumed to be 6371 km. The evaluation metric is the median Haversine distance \eqref{eq:haversine} between the predicted coordinates and the ground truth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its \href{https://en.wikipedia.org/wiki/Haversine_formula}{Wikipedia page} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes". The distance $d$ can be expressed as
 
 \begin{equation}
     d = 2r \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1)\cos(\phi_2)\sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right)
@@ -171,6 +164,15 @@ The evaluation is based upon the Haversine formula, with the Earth's radius is a
 
 \noindent where $\phi$ and $\lambda$ are latitude and longitude values.
 
-Different map projections were used in the project. The \gls{acr:utm} map projection splits Earth's surface into 60 zones in the latitudal direct and 19 zones in the longitudal direction, forming a grid. Doing this allows us to express coordinates in meters within a grid zone and still obtaining high accuracy measurements. Coordinate values in \acrshort{acr:utm} lie in the six figures, with the easting of the central meridian\footnote{\url{https://gisgeography.com/central-meridian/}} being defined to 500 000 meters to avoid negative easting values within the zone.
+Different map projections were used in the project. The \gls{acr:utm} map projection splits the Earth's surface into 60 zones in the latitudinal direction and 19 zones in the longitudinal direction, forming a grid. This allows for expressing coordinates in meters within a grid zone while still obtaining high accuracy measurements. Coordinate values in \acrshort{acr:utm} are typically in the six-figure range, with the easting of the central meridian\footnote{\url{https://gisgeography.com/central-meridian/}} defined as 500,000 meters to avoid negative easting values within the zone.
 
-The Swiss coordinate system, LV95 \citep{federalofficeoftopographyswisstopoSwissCoordinatesSystem}, was also explored. Its center coordinates are defined to the Swiss capital of Bern and the values lie in the seven figures.
+The Swiss coordinate system, LV95 \citep{federalofficeoftopographyswisstopoSwissCoordinatesSystem}, was also explored. Its fundamental refernece point is set to the Swiss capital of Bern, and the values typically lie in the seven-figure range.
+
+
+
+% \begin{figure}
+%     \centering
+%     \includegraphics*[width=\textwidth]{./figs/BERT_overall_procedures.jpg}
+%     \caption{High-level overview of the pre-training and fine-tuning procedures for \acrshort{acr:bert} \citep[3]{devlinBERTPretrainingDeep2019}}
+%     \label{fig:bert-high-level-overview}
+% \end{figure}

@@ -4,6 +4,7 @@ data/no/
 norway_tbcov/
 
 .env
+~*
 
 norwegian_tbcov/
 pretraining/

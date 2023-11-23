@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.3)  23 NOV 2023 10:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.3)  23 NOV 2023 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1218,18 +1218,28 @@ Underfull \hbox (badness 4995) in paragraph at lines 12--13
 []|\T1/ptm/m/n/10.95 Dr Chester Ben-ning-ton isch tot (pens-ive face)(pensive
  []
 
-<./figs/heatmap.png, id=222, 686.565pt x 308.5929pt>
+<./figs/heatmap.png, id=216, 686.565pt x 308.5929pt>
 File: ./figs/heatmap.png Graphic file (type png)
 <use ./figs/heatmap.png>
-Package pdftex.def Info: ./figs/heatmap.png  used on input line 27.
+Package pdftex.def Info: ./figs/heatmap.png  used on input line 28.
 (pdftex.def)             Requested size: 455.24408pt x 204.6184pt.
-) (sections/model.tex
-<figs/model_architecture.png, id=228, 1652.1725pt x 1692.3225pt>
+) (sections/model.tex [4 <./figs/heatmap.png>]
+<figs/model_architecture.png, id=236, 1652.1725pt x 1692.3225pt>
 File: figs/model_architecture.png Graphic file (type png)
 <use figs/model_architecture.png>
 Package pdftex.def Info: figs/model_architecture.png  used on input line 25.
 (pdftex.def)             Requested size: 318.66946pt x 326.39929pt.
- [4 <./figs/heatmap.png>]) (sections/experiments.tex [5 <./figs/model_architecture.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+[]\T1/ptm/m/n/10.95 Three dif-fer-ent pre-trained mod-els were tested in this pro-ject. These are \T1/pcr/m/n/10.95 bert-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+\T1/pcr/m/n/10.95 base-german-uncased[][][][][]\T1/ptm/m/n/10.95 , \T1/pcr/m/n/10.95 bert-base-german-cased-finetuned-swiss[][][][][]\T1/ptm/m/n/10.95 , and
+ []
+
+) (sections/experiments.tex [5 <./figs/model_architecture.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--48
 []|\T1/ptm/m/n/10.95 Coordinate
  []
@@ -1264,12 +1274,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []|\T1/ptm/m/n/10.95 statworx/\T1/ptm/b/n/10.95 bert-base-german-
  []
 
-<./figs/dotmap.png, id=283, 6129.2187pt x 3631.5675pt>
+<./figs/dotmap.png, id=282, 6129.2187pt x 3631.5675pt>
 File: ./figs/dotmap.png Graphic file (type png)
 <use ./figs/dotmap.png>
 Package pdftex.def Info: ./figs/dotmap.png  used on input line 68.
 (pdftex.def)             Requested size: 455.24408pt x 269.69598pt.
-<./figs/barchart.png, id=284, 564.4287pt x 268.1217pt>
+<./figs/barchart.png, id=283, 564.4287pt x 268.1217pt>
 File: ./figs/barchart.png Graphic file (type png)
 <use ./figs/barchart.png>
 Package pdftex.def Info: ./figs/barchart.png  used on input line 75.
@@ -1297,10 +1307,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40838 strings out of 475248
- 804844 string characters out of 5757813
- 1938785 words of memory out of 5000000
- 61600 multiletter control sequences out of 15000+600000
+ 40833 strings out of 475248
+ 804778 string characters out of 5757813
+ 1937785 words of memory out of 5000000
+ 61598 multiletter control sequences out of 15000+600000
  596588 words of font info for 91 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  102i,11n,165p,2309b,8866s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1326,18 +1336,18 @@ pdfTeX warning (dest): name{glo:acr:lm} has been referenced but does not exist, 
 pdfTeX warning (dest): name{glo:acr:nlp} has been referenced but does not exist, replaced by a fixed one
 
 
+pdfTeX warning (dest): name{glo:acr:smg} has been referenced but does not exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{glo:acr:xmod} has been referenced but does not exist, replaced by a fixed one
 
 
 pdfTeX warning (dest): name{glo:acr:bert} has been referenced but does not exist, replaced by a fixed one
 
-
-pdfTeX warning (dest): name{glo:acr:smg} has been referenced but does not exist, replaced by a fixed one
-
 <C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.pdf" (9 pages, 1953885 bytes).
+Output written on "c:\Users\oskar\NTNU\9. semester\TDT13\tex\auxiliary\main.pdf" (9 pages, 1951578 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

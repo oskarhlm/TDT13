@@ -27,27 +27,25 @@ Clearly, a figure showing the architecture is a must, such as Figure~\ref{fig:Ar
     \label{fig:model-architecture}
 \end{figure}
 
-\autoref{fig:model-architecture} shows a rough model architecture. It consists of a pre-trained \acrshort{acr:bert} model with a classification head on top. This architecture is only representative for the \acrshort{acr:bert}-based models (all but one).
+\autoref{fig:model-architecture} shows a rough model architecture. It consists of a pre-trained \acrshort{acr:bert} model with a classification head on top. This architecture is not representative for the \acrshort{acr:xmod}-based model used. The classification head has two outputs, namely  latitude and longitude coordinates. It takes as input the output corresponding to the \texttt{[CLS]} token, which captures the aggregated sequence representation. The hyperbolic tangent activation function adds some non-linearity to the output before it is fed into a fully connected linear layer, where latitude and longitude values are predicted.
 
-The pre-trained models that were tested in this project are listed in \autoref{tbl:models-used}. When selecting models I was mostly interested in those that are trained on Swiss corpera, seeing as this proved important in \cite{scherrerHeLjuVarDial20202020}. They were utilized through Huggingface's \texttt{transformers} interface.
+Three different pre-trained models were tested in this project. These are \texttt{bert-base-german-uncased}\footnote{\url{https://huggingface.co/dbmdz/bert-base-german-uncased}}, \texttt{bert-base-german-cased-finetuned-swiss}\footnote{\url{https://huggingface.co/statworx/bert-base-german-cased-finetuned-swiss}}, and \texttt{ZurichNLP/swissbert}\footnote{\url{https://huggingface.co/ZurichNLP/swissbert}}. When selecting models, I was primarily interested in those trained on Swiss corpora, as this proved effective to \cite{scherrerHeLjuVarDial20202020}. \texttt{bert-base-german-uncased} is a German-language model pre-trained on a Wikipedia dump, EU Bookshop corpus, and more. \texttt{bert-base-german-cased-finetuned-swiss} is based on \texttt{bert-base-german-cased} and is pre-trained on the Leipzig Corpora Collection \citep{goldhahnBuildingLargeMonolingual} and SwissCrawl \citep{linderAutomaticCreationText2020}. \texttt{ZurichNLP/swissbert} is the only non-\acrshort{acr:bert} model used. It is based on \acrshort{acr:xmod}, with adapters trained for German, French, Italian, and Romansh Grishun.
 
-The classification head has two outputs: the latitude coordinate and the longitude coordinate. It takes as input the output corresponding to the \texttt{[CLS]} token, which captures the aggregated sequence representation. The hyperbolic tangent activation function adds some non-linearity to the output before it fed into a fully connected linear layer, where latitude and longitude values are predicted.
+Pre-trained models where accessed through Huggingface's \texttt{transformers} library.
 
-\begin{table}
-    \centering
-    \begin{tabular}{l|r}
-        \toprule
-        Model Name                                               & Model Type          \\
-        \midrule
-        dbmdz/\textbf{bert-base-german-uncased}                  & \acrshort{acr:bert} \\
-        statworx/\textbf{bert-base-german-cased-finetuned-swiss} & \acrshort{acr:bert} \\
-        ZurichNLP/\textbf{swissbert}                             & \acrshort{acr:xmod} \\
-        % ZurichNLP/\textbf{swissbert-xlm-vocab}            & \acrshort{acr:xmod} \\
-        \bottomrule
-    \end{tabular}
-    \caption{Pre-trained models used in the project}
-    \label{tbl:models-used}
-\end{table}
-
-\texttt{bert-base-german-uncased} is the same model that \cite{scherrerHeLjuVarDial20202020} used for their best solutions. It is trained of a Wikipedia dump, EU Bookshop corpus, and more. \texttt{bert-base-german-cased-finetuned-swiss} is based upon \texttt{bert-base-german-cased} and is fine-tuned on the Leipzig Corpora Collection and SwissCrawl. \texttt{ZurichNLP/swissbert} is the only non-\acrshort{acr:bert} model used. It is rather based on \acrshort{acr:xmod}, and has adapters trained for German, French, Italian, and Ramansh Grishun.
+% \begin{table}
+%     \centering
+%     \begin{tabular}{l|r}
+%         \toprule
+%         Model Name                                               & Model Type          \\
+%         \midrule
+%         dbmdz/\textbf{bert-base-german-uncased}                  & \acrshort{acr:bert} \\
+%         statworx/\textbf{bert-base-german-cased-finetuned-swiss} & \acrshort{acr:bert} \\
+%         ZurichNLP/\textbf{swissbert}                             & \acrshort{acr:xmod} \\
+%         % ZurichNLP/\textbf{swissbert-xlm-vocab}            & \acrshort{acr:xmod} \\
+%         \bottomrule
+%     \end{tabular}
+%     \caption{Pre-trained models used in the project}
+%     \label{tbl:models-used}
+% \end{table}
 

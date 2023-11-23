@@ -7,7 +7,7 @@ However, to have a chance of success you need a plan driving the experimental re
 So first decide what experiments or series of experiments you plan --- and describe them in this section.
 \end{comment}
 
-In this section I will elaborate on my approach when training models, before presenting the most important findings from my experiments.
+In this section, I will elaborate on my approach to training models, before presenting the most important findings from my experiments.
 
 \subsection{Experimental Setup}
 \label{sec:experimentalSetup}
@@ -16,9 +16,9 @@ In this section I will elaborate on my approach when training models, before pre
 
 All experiments were performed on an NVIDIA GeForce RTX 4090, having 24 GB G6X memory\footnote{\url{https://www.nvidia.com/nb-no/geforce/graphics-cards/40-series/rtx-4090/}}. Computing resources belong to the Department of Geomatics at NTNU and are shared with fellow 5th year geomatics students. PyTorch\footnote{\url{https://pytorch.org/}} was used to create a training loop, and Huggingface's \texttt{transformers} library was used to fetch pre-trained models from their hub.
 
-The best results of \cite{scherrerHeLjuVarDial20202020} came from using a language-specific \acrshort{acr:bert}. As no pre-trained model was found in \citeyear{scherrerHeLjuVarDial20202020}, they fine-tuned the pre-trained \texttt{bert-base-german-uncased}\footnote{\url{https://huggingface.co/bert-base-german-uncased}} model on the SwissCrawl corpus \citep[3-4]{scherrerHeLjuVarDial20202020}. Since then, a pre-trained Swiss \acrshort{acr:bert} model\footnote{\url{https://huggingface.co/statworx/bert-base-german-cased-finetuned-swiss}} has been released, which I used in my experiments.
+The best results of \cite{scherrerHeLjuVarDial20202020} came from using a language-specific \acrshort{acr:bert}. As no pre-trained model was found in \citeyear{scherrerHeLjuVarDial20202020}, they pre-trained the \texttt{bert-base-german-uncased} model on the SwissCrawl corpus \citep[3-4]{scherrerHeLjuVarDial20202020}. Since then, a pre-trained Swiss \acrshort{acr:bert} model has been released, which I used in my experiments.
 
-Becuase of the limited timespan and computing resources of this project, I opted to freeze certain of \citeauthor{scherrerHeLjuVarDial20202020}'s hyperparameters. This includes the maximum sequence length and the batch size, the latter of which was also limited by the GPU memory. The loss function (MAE/L1) and scaler (joint \citep[5]{scherrerHeLjuVarDial20202020}) also largely remained unchanged. The focus of my experiments was to compare performance of pre-trained model, and seeing what effect different coordinate projections and learning rates have.
+Because of the limited timespan and computing resources of this project, I opted to freeze some of \citeauthor{scherrerHeLjuVarDial20202020}'s hyperparameters. This includes the maximum sequence length and the batch size, the latter of which was also limited by the GPU memory. The loss function (MAE/L1) and scaler (joint \citep[5]{scherrerHeLjuVarDial20202020}) also remained largely unchanged. The focus of my experiments was to compare the performance of different pre-trained models and to see what effect different coordinate projections and learning rates have.
 
 \subsection{Experimental Results}
 \label{sec:experimentalResults}
@@ -35,11 +35,11 @@ If there are specific points related to one experiment that you want to discuss 
 that already in this section; however, save the main overall discussion for Section~\ref{sec:Discussion}.
 \end{comment}
 
-A total of 15 models were trained. \autoref{tbl:highlighted-results} shows a selection of the most interresting results along with to coordinate projection and learning rate/learning rate scheduler used. A full overview of configurations and their corresponding results can be found on the project's \href{https://github.com/oskarhlm/TDT13}{GitHub page}. Fine-tuned models and training logs can be found in this \href{https://drive.google.com/drive/folders/1-6nAdhvf5DBHtWzpZa6iH7z0dFETi80h?usp=sharing}{Google Drive folder}.
+A total of 15 models were trained. \autoref{tbl:highlighted-results} shows a selection of the most interesting results along with the coordinate projection and learning rate/scheduler used. A full overview of configurations and their corresponding results can be found on the project's \href{https://github.com/oskarhlm/TDT13}{GitHub page}. Fine-tuned models and training logs can be found in this \href{https://drive.google.com/drive/folders/1-6nAdhvf5DBHtWzpZa6iH7z0dFETi80h?usp=sharing}{Google Drive folder}.
 
-The best results were achieved when using the \texttt{statworx/bert-base-german-cased-finetuned-swiss} pre-trained model with a reduced development/validation dataset. Learning rate schedulers did not prove very efficient for this task and a low learning rate of 2e-5 yielded the best results instead. No real differnece in performance was observed when using the UTM projection over raw latitude/longitude values, but the Swiss-native LV95 projection gave the model a performance boost into the 15-kilometer range. The X-Mod based \texttt{swissbert} model did not prove efficient for the task at hand.
+The best results were achieved when using the \texttt{statworx/bert-base-german-cased-finetuned-swiss} pre-trained model with a reduced development/validation dataset, using 1000 samples for validation and the rest for training. Learning rate schedulers did not prove very efficient for this task, and a low learning rate of 2e-5 yielded the best results instead. No real difference in performance was observed when using the UTM projection over raw latitude/longitude values, but the Swiss-native LV95 projection gave the model a performance boost into the 15-kilometer range. The X-Mod based \texttt{ZurichNLP/swissbert} model did not prove efficient for the task at hand.
 
-\autoref{fig:pointwise-distance} show the pointwise distance from the ground truth when using the best-performing model to make predictions on the test gold dataset.
+\autoref{fig:pointwise-distance} shows the pointwise distance from the ground truth when using the best-performing model to make predictions on the test gold dataset.
 
 \begin{table}
     \centering
