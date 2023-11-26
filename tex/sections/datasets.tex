@@ -1,7 +1,7 @@
 \section{Datasets}
 \label{sec:datasets}
 
-Data from VarDial 2020 and 2021 was acquired from a \href{https://github.com/yvesscherrer/vardial-shared-tasks}{GitHub repository} created by Yves Scherrer, co-author of the winning solution for the \gls{acr:smg} task in both \citeyear{scherrerHeLjuVarDial20202020} and \citeyear{scherrerSocialMediaVariety2021}. All but the test dataset have a ground truth associated with them, and I assume this unlabelled test dataset was used for a private leaderboard. The training, development, and test gold datasets have 22,600, 3,097, and 3,068 labelled samples, respectively. \autoref{tbl:train-dataset} shows the first three rows of the training dataset. It was collected by \cite[2-3]{hovyCapturingRegionalVariation2018} using the (at the time) publicly available Jodel API.
+Data from VarDial 2020 and 2021 was acquired from a \href{https://github.com/yvesscherrer/vardial-shared-tasks}{GitHub repository} created by Yves Scherrer, co-author of the winning solution for the \gls{acr:smg} task in both \citeyear{scherrerHeLjuVarDial20202020} and \citeyear{scherrerSocialMediaVariety2021}. All but one dataset have a ground truth associated with them, and I assume this unlabelled dataset was used for a private leaderboard. Three labelled datasets with 22,600, 3,097, and 3,068 samples were provided. They serve for training, development/validation, and testing, respectively. \autoref{tbl:train-dataset} shows the first three rows of the training dataset. It was collected by \cite[2-3]{hovyCapturingRegionalVariation2018} using the (at the time) publicly available Jodel API.
 
 \begin{table}
     \centering
@@ -20,8 +20,7 @@ Data from VarDial 2020 and 2021 was acquired from a \href{https://github.com/yve
     \label{tbl:train-dataset}
 \end{table}
 
-While Switzerland is a country with four official languages (Swiss-German, French, Italian, and Romansh Grishun), the dataset contains only Swiss-German Jodel messages, focusing on dialectal differences (the "Dial" in VarDial). %This results in the heatmap in \autoref{fig:heatmap}.
-
+While Switzerland is a country with four official languages (Swiss-German, French, Italian, and Romansh Grishun), the dataset contains only Swiss-German Jodel messages, presumably because the task focuses on dialectal differences. This results in the heatmap in \autoref{fig:heatmap}.
 
 \begin{figure}
     \centering
@@ -30,4 +29,4 @@ While Switzerland is a country with four official languages (Swiss-German, Frenc
     \label{fig:heatmap}
 \end{figure}
 
-Attempts were made to acquire a Norwegian dataset based on Norwegian Twitter/X messages using the method described in \cite{ljubesicTweetGeoToolCollecting2016}, but due to recent changes in the Twitter/X API\footnote{\url{https://www.theverge.com/2023/5/31/23739084/twitter-elon-musk-api-policy-chilling-academic-research}}, I was unable to do so. I also explored the possibility of using Norwegian Jodel messages, but to my knowledge, their API is no longer available to the public.
+Attempts were made to acquire a Norwegian dataset based on Norwegian Twitter/X messages using the method described in \cite{ljubesicTweetGeoToolCollecting2016}, but due to recent changes in the Twitter/X API\footnote{\url{https://www.theverge.com/2023/5/31/23739084/twitter-elon-musk-api-policy-chilling-academic-research}}, these attepmts failed. The possibility of using Norwegian Jodel messages was also explored, but to the author's knowledge, their API is no longer available to the public.

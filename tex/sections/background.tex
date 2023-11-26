@@ -135,17 +135,19 @@ Attention blocks can be found in three places in the Transformer architecture \c
     \item In the decoder block to perform cross-attention (or encoder-decoder attention) where each position in the decoder attends to all positions in the encoder
 \end{enumerate}
 
-The Transformer established a new state of the art in machine translation \cite{vaswaniAttentionAllYou2017a}, and is the fundamental building block of \acrshortpl{acr:lm} like \acrshort{acr:bert}.
+The Transformer represented a breakthrough in the field of \gls{acr:nlp}, and is the fundamental building block of \acrshortpl{acr:lm} like \acrshort{acr:bert}.
 
 \subsection[BERT]{\acrshort{acr:bert}}
 
-\gls{acr:bert} is a family of language models which was first introduced in 2018 and is designed to facilitate a wide range of downstream tasks \citep[5]{devlinBERTPretrainingDeep2019}. The \acrshort{acr:bert} architecture consists of stacked bidirectional Transformer encoders. The self-attention mechanism coupled with a masked language modeling pre-training step allows for training of deep bidirectional representations. 15 percent of words are masked with the special \texttt{[MASK]} token during this pre-training step and left for the model to predict \citep[4]{devlinBERTPretrainingDeep2019}. The second of the two unsupervised tasks used during pre-training is \gls{acr:nsp}, where the special \texttt{[CLS]} (found at the start of each tokenized sequence) is used to predict if a sentence \texttt{B} follows \texttt{A}. The input representation then looks like this:
+\gls{acr:bert} is a family of language models which was first introduced in 2018 and is designed to facilitate a wide range of downstream tasks \citep[5]{devlinBERTPretrainingDeep2019}. The \acrshort{acr:bert} architecture consists of stacked bidirectional Transformer encoders. The self-attention mechanism allows for training of deep bidirectional representations. The input sequence is transformed into embeddings (vector representations). These per-token embeddings include information about the meaning of the word itself, the meaning of the sentence/segment it belongs to, and the token's position in the full input. These embeddings then pass through a stack of Transformer encoders (12 and 24 for \textbf{\acrshort{acr:bert}\textsubscript{BASE}} and \textbf{\acrshort{acr:bert}\textsubscript{LARGE}}, respectively), allowing the model to learn more complex patterns and of different granularities (token, sentence, document) \citep[5]{devlinBERTPretrainingDeep2019}.
+
+In the \acrshort{acr:bert} framework, there are two training steps, namely the pre-training and fine-tuning procedures. \acrshort{acr:bert} is pre-trained on two \acrshort{acr:nlp} tasks. One is \gls{acr:mlm}, in which 15\% of words are masked with the special \texttt{[MASK]} token and are left for the model to predict \citep[4]{devlinBERTPretrainingDeep2019}. The \gls{acr:mlm} task helps the model learn bidirectional representations. The second of the two unsupervised tasks used during pre-training is \gls{acr:nsp}, where the special \texttt{[CLS]} token (found at the start of each tokenized sequence) is used to predict if a sentence \texttt{B} follows \texttt{A}. During this pre-training step, the input sequence looks like this:
 
 $$
     \texttt{[CLS]} \text{ this is sentence A } \texttt{[SEP]} \text{ and this is sentence B } \texttt{[SEP]}
 $$
 
-In the \acrshort{acr:bert} framework, there are two training steps, namely the pre-training and fine-tuning procedures. For the pre-training, each token of the input sequence, consisting of a sentence pair and the classification token \texttt{[CLS]}, is transformed into embeddings (vector representations). These per-token embeddings include information about the meaning of the word itself, the meaning of the sentence/segment it belongs to, and the token's position in the full input. These embeddings then pass through a stack of Transformer encoders (12 and 24 for \textbf{\acrshort{acr:bert}\textsubscript{BASE}} and \textbf{\acrshort{acr:bert}\textsubscript{LARGE}}, respectively), allowing the model to learn more complex patterns and of different granularities (token, sentence, document) \citep[5]{devlinBERTPretrainingDeep2019}.
+The \texttt{[CLS]} token is used to label sentence B as either \texttt{IsNext} or \texttt{NotNext}.
 
 \acrshort{acr:bert} is normally fine-tuned to specific downstream tasks by using the \texttt{[CLS]} token, which captures an aggregated representation of the input sequence. This vector representation can then be used as input to a classification layer for tasks like multi-label classification and regression.
 
@@ -155,7 +157,7 @@ In the \acrshort{acr:bert} framework, there are two training steps, namely the p
 
 \subsection{Geodesic Terminology and Metrics}
 
-The evaluation is based upon the Haversine formula, with the Earth's radius assumed to be 6371 km. The evaluation metric is the median Haversine distance \eqref{eq:haversine} between the predicted coordinates and the ground truth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its \href{https://en.wikipedia.org/wiki/Haversine_formula}{Wikipedia page} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes". The distance $d$ can be expressed as
+The evaluation is based upon the Haversine formula \eqref{eq:haversine}, with the Earth's radius assumed to be 6371 km. The evaluation metric is the median Haversine distance between the predicted coordinates and the ground truth \citep[4]{scherrerHeLjuVarDial20202020}. A formulation of the Haversine distance can be found on its \href{https://en.wikipedia.org/wiki/Haversine_formula}{Wikipedia page} where it is described as "the great-circle distance between two points on a sphere given their longitudes and latitudes". The distance $d$ can be expressed as
 
 \begin{equation}
     d = 2r \arcsin\left(\sqrt{\sin^2\left(\frac{\phi_2 - \phi_1}{2}\right) + \cos(\phi_1)\cos(\phi_2)\sin^2\left(\frac{\lambda_2 - \lambda_1}{2}\right)}\right)
@@ -166,7 +168,7 @@ The evaluation is based upon the Haversine formula, with the Earth's radius assu
 
 Different map projections were used in the project. The \gls{acr:utm} map projection splits the Earth's surface into 60 zones in the latitudinal direction and 19 zones in the longitudinal direction, forming a grid. This allows for expressing coordinates in meters within a grid zone while still obtaining high accuracy measurements. Coordinate values in \acrshort{acr:utm} are typically in the six-figure range, with the easting of the central meridian\footnote{\url{https://gisgeography.com/central-meridian/}} defined as 500,000 meters to avoid negative easting values within the zone.
 
-The Swiss coordinate system, LV95 \citep{federalofficeoftopographyswisstopoSwissCoordinatesSystem}, was also explored. Its fundamental refernece point is set to the Swiss capital of Bern, and the values typically lie in the seven-figure range.
+The Swiss coordinate system, LV95 \citep{federalofficeoftopographyswisstopoSwissCoordinatesSystem}, was also explored. Its fundamental reference point is set to the Swiss capital of Bern, and the values typically lie in the seven-figure range.
 
 
 

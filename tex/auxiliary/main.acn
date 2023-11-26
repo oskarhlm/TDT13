@@ -1,3 +1,4 @@
+\glossaryentry{SMG?\glossentry{acr:smg}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{1}
@@ -11,6 +12,7 @@
 \glossaryentry{NSP?\glossentry{acr:nsp}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{SVM?\glossentry{acr:svm}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{CRS?\glossentry{acr:crs}|setentrycounter[]{page}"\glsnumberformat}{1}
+\glossaryentry{MLM?\glossentry{acr:mlm}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{SMG?\glossentry{acr:smg}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{NLP?\glossentry{acr:nlp}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{NLP?\glossentry{acr:nlp}|setentrycounter[]{page}"\glsnumberformat}{1}
@@ -19,15 +21,20 @@
 \glossaryentry{NLP?\glossentry{acr:nlp}|setentrycounter[]{page}"\glsnumberformat}{1}
 \glossaryentry{RNN?\glossentry{acr:rnn}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{RNN?\glossentry{acr:rnn}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{NLP?\glossentry{acr:nlp}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{LM?\glossentry{acr:lm}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{NLP?\glossentry{acr:nlp}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{MLM?\glossentry{acr:mlm}|setentrycounter[]{page}"\glsnumberformat}{2}
+\glossaryentry{MLM?\glossentry{acr:mlm}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{NSP?\glossentry{acr:nsp}|setentrycounter[]{page}"\glsnumberformat}{2}
-\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
-\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
-\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{2}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{3}
@@ -35,6 +42,7 @@
 \glossaryentry{UTM?\glossentry{acr:utm}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{LM?\glossentry{acr:lm}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{3}
+\glossaryentry{SMG?\glossentry{acr:smg}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{SMG?\glossentry{acr:smg}|setentrycounter[]{page}"\glsnumberformat}{3}
@@ -44,9 +52,8 @@
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{5}
-\glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{6}
-\glossaryentry{BERT?\glossentry{acr:bert}|setentrycounter[]{page}"\glsnumberformat}{6}
+\glossaryentry{X-Mod?\glossentry{acr:xmod}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{CRS?\glossentry{acr:crs}|setentrycounter[]{page}"\glsnumberformat}{6}
 \glossaryentry{SMG?\glossentry{acr:smg}|setentrycounter[]{page}"\glsnumberformat}{8}
 \glossaryentry{LM?\glossentry{acr:lm}|setentrycounter[]{page}"\glsnumberformat}{8}
