@@ -7,3 +7,5 @@ The task remained the same in both 2020 and 2021, covering three language areas:
 The goal of the project is to replicate the results of a study that used a BERT-based classifier for this double regression task. The dataset from the 2020 VarDial challenge is chosen because it had more submissions compared to the 2021 dataset.
 
 **src/train.ipynb** is where most of the action takes place. The **lib/** folder includes helper functions used in **train.ipynb**.
+
+Trained models and logs can be found at <https://drive.google.com/drive/folders/1-6nAdhvf5DBHtWzpZa6iH7z0dFETi80h?usp=sharing>. 
